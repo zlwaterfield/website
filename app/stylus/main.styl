@@ -1,0 +1,59 @@
+@import 'list'
+@import 'normalize'
+@import 'style'
+@import 'animate'
+
+/* variables */
+$lightgrey = #999
+$linkColor = #555
+$grey = #BDC3C7
+$black = #222
+$white = #f7f7f7
+
+@font-face
+  font-family:"HelveNueThin"
+  src:
+      url("../fonts/HelveticaNeueThn.eot?") format("eot"),
+      url("../fonts/HelveticaNeueThn.woff") format("woff"),
+      url("../fonts/HelveticaNeueThn.ttf") format("truetype")
+  font-weight:normal
+  font-style:normal
+
+body, html
+  height: 100%
+  width: 100%
+  font-family: 'HelveNueThin'
+
+html
+button
+input
+select
+textarea
+  color: $black
+
+a
+a:visited
+  // color: $linkColor
+  text-decoration: none
+
+a:hover
+  color: lighten($linkColor,10%)
+
+body
+  color: $black
+  font-size: 1em
+  line-height: 1.5
+
+.title
+  margin-top: 20px
+
+  h1, h2, h3
+    margin: 0
+
+  h1
+    font-size: 2em
+
+  h2
+    font-size: 1.2em
+    font-weight: 300
+    margin-top: 5px
