@@ -6,7 +6,6 @@
   "scripts": {
     "start": "gulp clean && gulp"
   },
-  "author": "@moklick <mo@webkid.io>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.1.2",

@@ -1,0 +1,19 @@
+.slider
+  position: absolute
+  width: calc(100% - 500px)
+  height: 100%
+  transition: 0.4s ease-in-out
+  background: #f3f3f3
+  opacity: 0.6
+  right: 0
+  text-align: center
+
+  &.hide-box
+    transform: translate(100%,0)
+
+  &.show-box
+    transform: translate(0,0)
+
+@media(max-width: 767px)
+  .slider
+    display: none !important

@@ -84,6 +84,12 @@ gulp.task('images', function(cb) {
     .pipe(gulp.dest(dist + 'images/'));
 });
 
+// copy js
+gulp.task('js', function(cb) {
+  return gulp.src(app + 'scripts/vendor/**/*.js')
+    .pipe(gulp.dest(dist + 'js/vendor'));
+});
+
 // watch styl, html and js file changes
 gulp.task('watch', function() {
   gulp.watch(app + 'stylus/*.styl', ['styles']);
@@ -99,9 +105,9 @@ gulp.task('clean', function(cb) {
 });
 
 // by default build project and then watch files in order to trigger livereload
-gulp.task('default', ['images', 'html', 'fonts', 'scripts', 'styles', 'serve', 'watch']);
+gulp.task('default', ['images', 'html', 'fonts', 'scripts', 'js', 'styles', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
-  gulp.start(['images', 'html', 'scripts','styles']);
+  gulp.start(['images', 'html', 'scripts', 'js', 'styles']);
 });

@@ -10,6 +10,9 @@
   opacity: 0
   margin-top: 20px
 
+  a
+    cursor: pointer
+
 .containertop
   margin-right: auto
   margin-left: auto
@@ -43,10 +46,23 @@
   float:left
 
 .intro-message
-  height:100%
-  width: 100%
+  height: 100%
   color: #757575
   text-align:center
+  transition: 0.4s ease-in-out
+
+  &.hide-box
+    width: 100%
+
+  &.show-box
+    width: 500px
+
+  .exit-box
+    position: absolute
+    left: 435px
+    top: 15px
+    cursor: pointer
+    z-index: 10
 
 .intro-message > h1
   margin: 0
@@ -78,9 +94,8 @@
   height:45px
   font-size: 1.6em
   color:#8D8D8D
-
-  a
-    color:#8D8D8D
+  font-weight: 300
+  cursor: pointer
 
 .resume
     margin-top:15px
@@ -93,7 +108,9 @@
   color:#8D8D8D
   margin-bottom: 0
 
-.buttonIntro:hover, .resumeButton a:hover, .resumeButton:hover, .buttonIntro:active, .resumeButton a:active
+.buttonIntro:hover, .resumeButton a:hover, .resumeButton:hover,
+.buttonIntro:active, .resumeButton a:active, .resumeButton a:active
+.resumeButton:focus, .resumeButton a:focus
   -webkit-animation: socialbutton 0.35s
   animation: socialbutton 0.35s
   color:#9478C0
@@ -145,3 +162,25 @@
         color: white
         font-weight: 300
         font-size: 3em
+
+.category-box-row
+  opacity: 0
+  margin-top: 20px
+
+.category-box
+  width: 105px
+  height: 105px
+  background: #947ABE
+  border-radius: 10px
+  margin: 10px
+  color: white
+  padding: 10px
+  cursor: pointer
+  opacity: 0.6
+
+  i
+    margin-top: 5px
+
+@media(max-width: 767px)
+  .category-box-row
+    display: none !important
