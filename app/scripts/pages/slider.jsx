@@ -1,6 +1,7 @@
 import React from 'react';
 import Intro from './intro.jsx';
 import Interests from './categories/interests.jsx';
+import Experience from './categories/experience.jsx';
 
 export default class Slider extends React.Component {
 
@@ -9,6 +10,12 @@ export default class Slider extends React.Component {
       return (
         <div className={"slider" + (this.props.category ? " show-box" : " hide-box")}>
           <Interests />
+        </div>
+      );
+    } else if (this.props.category === 'Experience') {
+      return (
+        <div className={"slider" + (this.props.category ? " show-box" : " hide-box")}>
+          <Experience />
         </div>
       );
     } else if (this.props.category) {
