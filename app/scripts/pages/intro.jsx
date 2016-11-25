@@ -49,15 +49,15 @@ export default class Intro extends React.Component {
         <div className='row category-box-row'>
           <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Experience')}>
             Experience<br />
-            <i className="fa fa-building-o fa-fw fa-3x"></i>
+            <i className="fa fa-building-o fa-fw fa-2x"></i>
           </div>
           <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Projects')}>
             Projects<br />
-            <i className="fa fa-code fa-fw fa-3x"></i>
+            <i className="fa fa-code fa-fw fa-2x"></i>
           </div>
           <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Interests')}>
             Interests<br />
-            <i className="fa fa-snowflake-o fa-fw fa-3x"></i>
+            <i className="fa fa-snowflake-o fa-fw fa-2x"></i>
           </div>
         </div>
       </div>
