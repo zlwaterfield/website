@@ -8,10 +8,27 @@
 
 .social-buttons
   opacity: 0
-  margin-top: 20px
+  padding-top: 20px
+  margin: auto
+  max-width: 280px
 
-  a
-    cursor: pointer
+  .bottom-row
+    background-color:transparent
+    border:none
+    outline:none
+    font-size: 1.4em
+    font-weight: 300
+    margin-top:15px
+
+    div, div a
+      cursor: pointer
+      text-decoration: none
+      color:#8D8D8D
+
+      &:hover, &:active
+        -webkit-animation: socialbutton 0.35s
+        animation: socialbutton 0.35s
+        color:#9478C0
 
 .containertop
   margin-right: auto
@@ -85,21 +102,6 @@
   margin-top: -27px
   margin-left: 25px
 
-.resumeButton
-  background-color:transparent
-  border:none
-  outline:none
-  border-radius:10px
-  width:175px
-  height:45px
-  font-size: 1.6em
-  color:#8D8D8D
-  font-weight: 300
-  cursor: pointer
-
-.resume
-    margin-top:15px
-
 .buttonIntro
   display: inline-block
   margin-left:17px
@@ -108,9 +110,8 @@
   color:#8D8D8D
   margin-bottom: 0
 
-.buttonIntro:hover, .resumeButton a:hover, .resumeButton:hover,
-.buttonIntro:active, .resumeButton a:active, .resumeButton a:active
-.resumeButton:focus, .resumeButton a:focus
+.buttonIntro:hover,
+.buttonIntro:active,
   -webkit-animation: socialbutton 0.35s
   animation: socialbutton 0.35s
   color:#9478C0
@@ -181,6 +182,6 @@
   i
     margin-top: 5px
 
-@media(max-width: 767px)
+@media(max-width: 900px)
   .category-box-row
     display: none !important

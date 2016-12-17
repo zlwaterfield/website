@@ -42,22 +42,13 @@ export default class Intro extends React.Component {
           <a href="https://www.flickr.com/photos/zachwaterfield/" target="_blank" className="buttonIntro"><i className="fa fa-flickr fa-fw"></i></a>
           <a href="http://www.linkedin.com/in/zlwaterfield" target="_blank" className="buttonIntro"><i className="fa fa-linkedin fa-fw"></i></a>
           <a href="https://medium.com/@zlwaterfield" target="_blank" className="buttonIntro"><i className="fa fa-medium fa-fw"></i></a>
-          <div className="resume">
-            <a href="resume.pdf" target="_blank" className="resumeButton" ng-click="mixpanel('Resume')"><i className="fa fa-list fa-fw"></i> Resume</a>
-          </div>
-        </div>
-        <div className='row category-box-row'>
-          <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Experience')}>
-            Experience<br />
-            <i className="fa fa-building-o fa-fw fa-2x"></i>
-          </div>
-          <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Projects')}>
-            Projects<br />
-            <i className="fa fa-code fa-fw fa-2x"></i>
-          </div>
-          <div className='shake-slow shake category-box' onClick={this.chooseCategory.bind(this, 'Interests')}>
-            Interests<br />
-            <i className="fa fa-snowflake-o fa-fw fa-2x"></i>
+          <div className="row bottom-row">
+            <div className='col-xs-6'>
+              <a href="resume.pdf" target="_blank" className="resumeButton" ng-click="mixpanel('Resume')"><i className="fa fa-list fa-fw"></i> Resume</a>
+            </div>
+            <div className='col-xs-6' onClick={this.chooseCategory.bind(this, 'Experience')}>
+              <i className="fa fa-building-o fa-fw"></i> Experience
+            </div>
           </div>
         </div>
       </div>

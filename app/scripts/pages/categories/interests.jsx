@@ -105,7 +105,6 @@ export default class Interests extends React.Component {
     return (
       <div className="interests-container">
         <div id="vis"></div>
-        <div className="disclaimer">~ Words being added as inspiration is discovered ~</div>
       </div>
     );
   }
