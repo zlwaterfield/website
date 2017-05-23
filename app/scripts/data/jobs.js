@@ -13,7 +13,7 @@ module.exports = [
       'Worked closely with large clients in order to optimize code for large amounts of data in the browser'
     ]
   }, {
-    role: 'Co-Founder and Lead Backend Developer',
+    role: 'Co-Founder and CTO',
     company: 'PadPiper',
     location: 'Remote',
     dates: 'June 2016 - Present',

@@ -74,16 +74,8 @@ export default class Experience extends React.Component {
               </div>
               <div className='card-body'>
                 <h2>{job.role}</h2>
-                <h3><b>{job.company}</b></h3>
+                <h3>{job.company}</h3>
                 <h3>{job.location} | {job.dates}</h3>
-                <div className='description'>
-                  { job.description.map((point, j) =>{
-                    return (
-                        <p key={`${job.company}_${j}`}>• {point}</p>
-                      )
-                    })
-                  }
-                </div>
                 <div className='card-footer next' onClick={this.arrowClick.bind(this, 'next')}>
                   <h4>Next</h4>
                 </div>
@@ -104,4 +96,3 @@ export default class Experience extends React.Component {
 }
 
                   // <span className='arrow next' onClick={this.arrowClick.bind(this, 'next')}></span>
-

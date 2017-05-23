@@ -33,6 +33,7 @@ export default class Intro extends React.Component {
           </div>
           <div className="title">
             <h1>Zach Waterfield</h1>
+            <h2>Co-founder | PadPiper</h2>
             <h2>Full Stack Developer | Universe</h2>
             <h2>Computer Engineering | University of Waterloo</h2>
           </div>
@@ -42,12 +43,16 @@ export default class Intro extends React.Component {
           <a href="https://www.flickr.com/photos/zachwaterfield/" target="_blank" className="buttonIntro"><i className="fa fa-flickr fa-fw"></i></a>
           <a href="http://www.linkedin.com/in/zlwaterfield" target="_blank" className="buttonIntro"><i className="fa fa-linkedin fa-fw"></i></a>
           <a href="https://medium.com/@zlwaterfield" target="_blank" className="buttonIntro"><i className="fa fa-medium fa-fw"></i></a>
+          <a href="http://zlwaterfield.com/#/concerts" target="_blank" className="buttonIntro"><i className="fa fa-music fa-fw"></i></a>
           <div className="row bottom-row">
-            <div className='col-xs-6'>
+            <div className='col-md-6 col-sm-12'>
               <a href="resume.pdf" target="_blank" className="resumeButton" ng-click="mixpanel('Resume')"><i className="fa fa-list fa-fw"></i> Resume</a>
             </div>
-            <div className='col-xs-6' onClick={this.chooseCategory.bind(this, 'Experience')}>
+            <div className='col-xs-6 exp' onClick={this.chooseCategory.bind(this, 'Experience')}>
               <i className="fa fa-building-o fa-fw"></i> Experience
+            </div>
+            <div className='col-xs-12 contact'>
+              <a href="mailto:zlwaterfield@gmail.com"><i className="fa fa-envelope-o fa-fw"></i> Contact Me</a>
             </div>
           </div>
         </div>
@@ -55,4 +60,3 @@ export default class Intro extends React.Component {
     );
   }
 }
-
