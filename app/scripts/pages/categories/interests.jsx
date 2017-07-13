@@ -1,7 +1,5 @@
 import React from 'react';
 
-import tags from '../../data/words';
-
 var w = window.innerWidth - 500,
     h = window.innerHeight - 50,
     fontSize= null;
