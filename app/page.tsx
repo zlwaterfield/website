@@ -1,7 +1,6 @@
 // Read json file
 import fs from 'fs';
 import Image from 'next/image';
-import Link from 'next/link';
 import path from 'path';
 
 async function getInvestments() {
@@ -93,11 +92,11 @@ const Investments = async () => {
 
 const InvestmentCard = ({ investment }: { investment: any }) => {
   return (
-    <Link href={investment.url} className="cursor-pointer">
+    <a href={investment.url} className="cursor-pointer">
       <div className="bg-white border-2 border-black rounded-md p-4 flex items-start">
         <h3 className="text-xl font-bold">{investment.name}</h3>
         <p className="text-lg">{investment.description}</p>
       </div>
-    </Link>
+    </a>
   );
 }
