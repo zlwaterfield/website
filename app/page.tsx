@@ -91,7 +91,13 @@ const Investments = async () => {
   );
 }
 
-const InvestmentCard = ({ investment }: { investment: any }) => {
+interface Investor {
+  name: string;
+  description: string;
+  url: string;
+}
+
+const InvestmentCard = ({ investment }: { investment: Investor }) => {
   return (
     <Link href={investment.url} className="cursor-pointer">
       <div className="bg-white border-2 border-black rounded-md p-4 flex items-start">
