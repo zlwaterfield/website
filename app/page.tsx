@@ -81,7 +81,7 @@ const Investments = async () => {
     <section className="w-full">
       <h3 className="text-xl font-semibold mt-6 mb-4">Investments</h3>
       <div className="grid grid-cols-3 gap-4">
-        {investments.map((investment: any) => (
+        {investments && investments.map((investment: any) => (
           <div key={investment.id}>
             <InvestmentCard investment={investment} />
           </div>
