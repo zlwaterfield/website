@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Supabase",
+        "description": "",
+        "url": "https://supabase.com",
+        "image_url": ""
+    },
+    {
+        "name": "Cal",
+        "description": "",
+        "url": "https://cal.com",
+        "image_url": ""
+    },
+    {
+        "name": "Doppler",
+        "description": "",
+        "url": "https://doppler.com",
+        "image_url": ""
+    },
+    {
+        "name": "Motion",
+        "description": "",
+        "url": "https://www.usemotion.com",
+        "image_url": ""
+    },
+    {
+        "name": "BuildBetter",
+        "description": "",
+        "url": "https://buildbetter.ai",
+        "image_url": ""
+    },
+    {
+        "name": "Rose Rocket",
+        "description": "",
+        "url": "https://roserocket.com",
+        "image_url": ""
+    },
+    {
+        "name": "Peggy",
+        "description": "",
+        "url": "http://peggy.com",
+        "image_url": ""
+    },
+    {
+        "name": "Taxwire",
+        "description": "",
+        "url": "https://taxwire.com",
+        "image_url": ""
+    },
+    {
+        "name": "Pheonix",
+        "description": "",
+        "url": "https://pheonix.ca",
+        "image_url": ""
+    },
+    {
+        "name": "Fern",
+        "description": "",
+        "url": "https://buildwithfern.com",
+        "image_url": ""
+    },
+    {
+        "name": "Instant",
+        "description": "",
+        "url": "https://instant.dev",
+        "image_url": ""
+    }
+]
