@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { PHProvider } from "./providers";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" />
       </head>
-      <body className={openSans.className}>{children}</body>
+      <PHProvider>
+        <body className={openSans.className}>{children}</body>
+      </PHProvider>
     </html>
   );
 }
