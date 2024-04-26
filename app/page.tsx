@@ -1,12 +1,11 @@
-// Read json file
+import { Investment } from '@/types/investments';
 import fs from 'fs';
-import Image from 'next/image';
 import Link from 'next/link';
 import path from 'path';
 
-async function getInvestments() {
-  const data = fs.readFileSync(path.resolve('./data/investments.json'));
-  const investments = JSON.parse(data);
+async function getInvestments(): Promise<Investment[]> {
+  const data = fs.readFileSync(path.resolve('./data/investments.json'), 'utf-8');
+  const investments = JSON.parse(data) as Investment[];
   return investments
 }
 
@@ -91,13 +90,7 @@ const Investments = async () => {
   );
 }
 
-interface Investor {
-  name: string;
-  description: string;
-  url: string;
-}
-
-const InvestmentCard = ({ investment }: { investment: Investor }) => {
+const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="cursor-pointer">
       <div className="bg-white border-2 border-black rounded-md p-4 flex items-start">
