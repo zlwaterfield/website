@@ -11,7 +11,7 @@ async function getInvestments(): Promise<Investment[]> {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 max-w-3xl mx-auto">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-12 md:p-24 max-w-3xl mx-auto">
       <Hero />
       <Resume />
       <Investments />
@@ -31,7 +31,7 @@ const Hero = () => {
 const Resume = () => {
   return (
     <section className="w-full">
-      <div className="container mx-auto mt-3">
+      <div className="md:container mx-auto mt-3">
         <h3 className="text-xl font-semibold mt-6 mb-2">About</h3>
         <p>I grew up in Canada 🇨🇦. I went to the <a href="https://uwaterloo.ca/" className="text-blue-500 hover:underline">University of Waterloo</a> for Computer engineering and worked at a variety of early/growth-stage companies.</p>
         <p>I've lived in many places like Lima, Porto, San Francisco, Ann Arbor, Toronto, and Vancouver. I love travelling and exploring new places.</p>
@@ -83,10 +83,10 @@ const Investments = async () => {
   const investments = await getInvestments();
   return (
     <section className="w-full">
-      <h3 className="text-xl font-semibold mt-6 mb-2">Investments</h3>
-      <div className="grid grid-cols-3 gap-4">
+      <h3 className="text-xl font-semibold mt-6 mb-2">Select investments</h3>
+      <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {investments.map((investment: any) => (
-          <div key={investment.id}>
+          <div key={investment.name}>
             <InvestmentCard investment={investment} />
           </div>
         ))}
@@ -98,8 +98,12 @@ const Investments = async () => {
 const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="cursor-pointer">
-      <div className="bg-white border-2 border-black rounded-md p-4 flex items-start">
-        <h3 className="text-xl font-bold">{investment.name}</h3>
+      <div className="bg-black/80 hover:bg-black/70 border-2 border-black rounded-md p-4 flex items-start relative">
+        {/* {investment.logo_url ? (
+          <img src={investment.logo_url} className="relative max-h-10" alt={`${investment.name} logo`}/>
+        ) : ( */}
+        <h3 className="text-xl font-bold text-white">{investment.name}</h3>
+        {/* )} */}
         <p className="text-lg">{investment.description}</p>
       </div>
     </Link>
