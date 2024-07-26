@@ -38,15 +38,15 @@ const Resume = () => {
 
         <h3 className="text-xl font-semibold mt-6 mb-2">Favourite things to do:</h3>
         <ul className="list-disc pl-6">
-            <li>💻 Write code</li>
-            <li>☕️ Drink (and brew) good coffee</li>
-            <li>🗣 Talk to passionate people</li>
-            <li>🛬 Travel to new places for long periods of time (1 month+)</li>
-            <li>♣️ Play poker</li>
+            <li>💻 Writing code</li>
+            <li>☕️ Drinking (and brewing) good coffee</li>
+            <li>🗣 Talking to passionate people</li>
+            <li>🛬 Traveling to new places for long periods of time (1 month+)</li>
+            <li>♣️ Playing poker</li>
             <li>👟 Running</li>
-            <li>⛷ Downhill ski</li>
-            <li>🚴‍♂️ Bike (mountain and road)</li>
-            <li>🍸 Make and drink cocktails</li>
+            <li>⛷ Downhill skiing</li>
+            <li>🚴‍♂️ Biking (mountain and road)</li>
+            <li>🍸 Making and drinking cocktails</li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">What I'm doing these days:</h3>
