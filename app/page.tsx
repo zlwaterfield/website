@@ -1,7 +1,10 @@
+
 import { Investment } from '@/types/investments';
 import fs from 'fs';
 import Link from 'next/link';
 import path from 'path';
+import { Cursors, PresenceIndicator } from './instant';
+
 
 async function getInvestments(): Promise<Investment[]> {
   const data = fs.readFileSync(path.resolve('./data/investments.json'), 'utf-8');
@@ -12,16 +15,19 @@ async function getInvestments(): Promise<Investment[]> {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-12 md:p-24 max-w-3xl mx-auto">
-      <Hero />
-      <Resume />
-      <Investments />
-    </main>
+        <Cursors>
+          <Hero />
+        </Cursors>
+        <Resume />
+        <Investments />
+        <PresenceIndicator />
+      </main>
   );
 }
 
 const Hero = () => {
   return (
-    <section className="w-full">
+    <section className="w-full p-10">
       <h1 className="text-5xl font-bold jersey-10">Zach Waterfield</h1>
       <p className="text-left">Engineer and investor based in Toronto, Canada</p>
     </section>
@@ -109,3 +115,4 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
     </Link>
   );
 }
+
