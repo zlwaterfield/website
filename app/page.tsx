@@ -41,27 +41,24 @@ const Resume = () => {
             <li>💻 Writing code</li>
             <li>☕️ Drinking (and brewing) good coffee</li>
             <li>🗣 Talking to passionate people</li>
-            <li>🛬 Traveling to new places for long periods of time (1 month+)</li>
-            <li>♣️ Playing poker</li>
+            <li>🛬 Traveling to new places</li>
             <li>👟 Running</li>
-            <li>⛷ Downhill skiing</li>
-            <li>🚴‍♂️ Biking (mountain and road)</li>
-            <li>🍸 Making and drinking cocktails</li>
+            <li>🚴‍♂️ Biking</li>
+            <li>🏊 Swimming</li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">What I'm doing these days:</h3>
         <ul className="list-disc pl-6">
             <li>Engineer at <a href="https://posthog.com" className="text-blue-500 hover:underline">PostHog</a></li>
-            <li>Training for my first triathlon 🏊‍♂️ 🚴‍♂️ 🏃</li>
+            <li>Training for my first Ironman 🏊‍♂️ 🚴‍♂️ 🏃</li>
             <li>Investing with <a href="https://www.rippleventures.com/" className="text-blue-500 hover:underline">Ripple Ventures</a> and <a href="https://www.pioneerfund.vc/" className="text-blue-500 hover:underline">Pioneer Fund</a> - focused on devtools, AI and B2B SaaS</li>
-            <li>Building fun side projects</li>
-            <li>Founder poker game in Toronto. Message me if you’re interested in joining.</li>
-            <li>Investing in and advising early-stage companies</li>
-            <li>Running events and dinners for founders and people in tech</li>
+            <li>Building fun side projects like [Scramble](https://github.com/zlwaterfield/scramble)</li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">Things I've done in the past:</h3>
         <ul className="list-disc pl-6">
+            <li>Founder poker game.</li>
+            <li>Events / dinners for founders and people in tech</li>
             <li>Founded <a href="https://zettlor.com/" className="text-blue-500 hover:underline">Zettlor</a></li>
             <li>Helped source deals with Village Globals and Shaan Puri's fund - investing in 40+ companies</li>
             <li><a href="https://angel.co/ian-logan-and-zach-waterfield/syndicate?utm_campaign=syndicate_direct_link" className="text-blue-500 hover:underline">Investment Club Syndicate</a> - <a href="https://twitter.com/albertianlogan" className="text-blue-500 hover:underline">Ian Logan</a> and I run a syndicate on AngelList where we invest in a wide range of companies.</li>
