@@ -51,7 +51,7 @@ const Resume = () => {
             <li>Engineer at <a href="https://posthog.com" className="text-blue-500 hover:underline">PostHog</a></li>
             <li>Training for my first Ironman 🏊‍♂️ 🚴‍♂️ 🏃</li>
             <li>Investing with <a href="https://www.rippleventures.com/" className="text-blue-500 hover:underline">Ripple Ventures</a> and <a href="https://www.pioneerfund.vc/" className="text-blue-500 hover:underline">Pioneer Fund</a> - focused on devtools, AI and B2B SaaS</li>
-            <li>Advising early stage startups, <Link href="/consulting" className="text-blue-500 hover:underline">more here</Link></li>
+            <li>Helping early stage startups and founders</li>
             <li>Building fun side projects like <a href="https://github.com/zlwaterfield/scramble" className="text-blue-500 hover:underline">Scramble</a></li>
         </ul>
 
@@ -76,7 +76,7 @@ const Resume = () => {
         <h3 className="text-xl font-semibold mt-10 mb-4">How can I help</h3>
         <ul className="list-disc pl-6 space-y-0.5">
           <li><strong>Engineering and product strategy</strong> - I've been around the block a few times and have a good sense of what works and what doesn't. I'm happy to help you think through your product strategy, engineering strategy, and how to build a great product.</li>
-          <li><strong>Fundraising strategy / pitch help / deck review</strong> - I've helped >100 companies with YC prep and reviewed countless decks for founders raising their pre-seed and seed rounds. If you need help building a strategy around your raise, improving your narrative, or just getting a deck review, let me know!</li>
+          <li><strong>Fundraising strategy / pitch help / deck review</strong> - I've helped over 100 companies with YC prep and reviewed countless decks for founders raising their pre-seed and seed rounds. If you need help building a strategy around your raise, improving your narrative, or just getting a deck review, let me know!</li>
           <li><strong>Early startup operations</strong> - I've spent a lot of time both building my startup and helping other founders. There is a lot to manage. I'm happy to help think through those early operations like organizing your team, interviewing early hires, choosing the right services for payroll, bookkeeping, etc.</li>
           <li><strong>Co-founder dynamics</strong> - I've been through the ups and downs you go through with your founding team. It can be hard, but there are things you can do to make it easier. I'm happy to walk through strategies I've used that have worked wonders on team morale.</li>
         </ul>
