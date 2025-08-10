@@ -51,8 +51,8 @@ const Resume = () => {
             <li>Engineer at <a href="https://posthog.com" className="text-blue-500 hover:underline">PostHog</a></li>
             <li>Training for my first Ironman 🏊‍♂️ 🚴‍♂️ 🏃</li>
             <li>Investing with <a href="https://www.rippleventures.com/" className="text-blue-500 hover:underline">Ripple Ventures</a> and <a href="https://www.pioneerfund.vc/" className="text-blue-500 hover:underline">Pioneer Fund</a> - focused on devtools, AI and B2B SaaS</li>
-            <li>Helping early stage startups and founders</li>
-            <li>Building fun side projects like <a href="https://github.com/zlwaterfield/scramble" className="text-blue-500 hover:underline">Scramble</a></li>
+            <li>Working with early stage startups and founders</li>
+            <li>Side projects like <a href="https://github.com/zlwaterfield/radar" className="text-blue-500 hover:underline">Radar</a></li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-10 mb-4">Things I've done in the past</h3>
@@ -62,6 +62,7 @@ const Resume = () => {
             <li>Founded <a href="https://zettlor.com/" className="text-blue-500 hover:underline">Zettlor</a></li>
             <li>Helped source deals with Village Globals and Shaan Puri's fund - investing in 40+ companies</li>
             <li>Built and sold a bit.ly competitor named Toadly</li>
+            <li>Side projects like <a href="https://github.com/zlwaterfield/scramble" className="text-blue-500 hover:underline">Scramble</a></li>
             <li><a href="https://angel.co/ian-logan-and-zach-waterfield/syndicate?utm_campaign=syndicate_direct_link" className="text-blue-500 hover:underline">Investment Club Syndicate</a> - <a href="https://twitter.com/albertianlogan" className="text-blue-500 hover:underline">Ian Logan</a> and I run a syndicate on AngelList where we invest in a wide range of companies.</li>
             <li><a href="http://beondeck.com/" className="text-blue-500 hover:underline">On Deck</a> - I was an engineering lead at On Deck. On Deck is where the world's top talent comes to connect. Whatever it is you want to do next, our ever-growing community and action-oriented programming will help you get there—fast. If you want to learn something new to up-level your career, launch and scale your big ideas, or make lifelong friends, this is the place for you.</li>
             <li><a href="https://www.kopa.co/" className="text-blue-500 hover:underline">Kopa</a> - In 2016, I co-founded Kopa, originally called PadPiper, with <a href="https://www.linkedin.com/in/greaturl/" className="text-blue-500 hover:underline">Jack</a> and <a href="https://www.linkedin.com/in/courtneysabo/" className="text-blue-500 hover:underline">Courtney</a>. We founded it on the belief that there is a better way to rent. Housing is such an important piece of our lives, yet it is one of the most stressful to acquire. We built Kopa to be the most streamlined process for renting a home, from searching to paying and moving in. Kopa went through YCombinator in Winter 2019 and has since expanded to over 300 cities in the United States and helped thousands of people find homes. In August 2020, I stepped back from Kopa to work on other things.</li>
