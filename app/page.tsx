@@ -21,9 +21,27 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <section className="w-full">
-      <h1 className="text-5xl font-bold jersey-10">Zach Waterfield</h1>
-      <p className="text-left">Engineer and investor based in Toronto, Canada</p>
+    <section className="w-full mb-8">
+      <div className="relative">
+        <h1 className="text-6xl md:text-7xl font-bold jersey-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-gradient bg-[length:200%_auto] hover:scale-105 transition-transform duration-300">
+          Zach Waterfield
+        </h1>
+        <div className="absolute -top-2 -left-2 text-4xl animate-bounce">👋</div>
+      </div>
+      <p className="text-left mt-4 text-lg">
+        <span className="inline-block animate-pulse">💻</span> Engineer and investor based in Toronto, Canada 🇨🇦
+      </p>
+      <div className="flex gap-2 mt-4 flex-wrap">
+        <span className="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
+          Building cool stuff
+        </span>
+        <span className="px-3 py-1 bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
+          Investing in startups
+        </span>
+        <span className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
+          Training for Ironman
+        </span>
+      </div>
     </section>
   );
 }
