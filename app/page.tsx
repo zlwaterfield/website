@@ -48,16 +48,17 @@ const Resume = () => {
 
         <h3 className="text-xl font-semibold mt-10 mb-4">What I'm doing these days</h3>
         <ul className="list-disc pl-6 space-y-0.5">
-            <li>Engineer at <a href="https://posthog.com" className="text-blue-500 hover:underline">PostHog</a></li>
+            <li>Starting something new soon 👀</li>
             <li>Training for my first Ironman 🏊‍♂️ 🚴‍♂️ 🏃</li>
             <li>Investing with <a href="https://www.rippleventures.com/" className="text-blue-500 hover:underline">Ripple Ventures</a> and <a href="https://www.pioneerfund.vc/" className="text-blue-500 hover:underline">Pioneer Fund</a> - focused on devtools, AI and B2B SaaS</li>
             <li>Working with early stage startups and founders</li>
-            <li>Side projects like <a href="https://github.com/zlwaterfield/radar" className="text-blue-500 hover:underline">Radar</a></li>
+            <li>Building <a href="https://github.com/zlwaterfield/radar" className="text-blue-500 hover:underline">Radar</a></li>
+          <li>Founder poker game.</li>
         </ul>
 
         <h3 className="text-xl font-semibold mt-10 mb-4">Things I've done in the past</h3>
         <ul className="list-disc pl-6 space-y-0.5">
-            <li>Founder poker game.</li>
+            <li>Engineer at <a href="https://posthog.com" className="text-blue-500 hover:underline">PostHog</a></li>
             <li>Events / dinners for founders and people in tech</li>
             <li>Founded <a href="https://zettlor.com/" className="text-blue-500 hover:underline">Zettlor</a></li>
             <li>Helped source deals with Village Globals and Shaan Puri's fund - investing in 40+ companies</li>
