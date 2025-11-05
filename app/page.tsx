@@ -22,8 +22,8 @@ export default function Home() {
 const Hero = () => {
   return (
     <section className="w-full">
-      <h1 className="text-5xl font-bold jersey-10">Zach Waterfield</h1>
-      <p className="text-left">Engineer and investor based in Toronto, Canada</p>
+      <h1 className="text-5xl font-bold jersey-10">Hey, I'm Zach! 👋</h1>
+      <p className="text-left">Engineer, investor, and professional coffee enthusiast ☕ based in Toronto, Canada</p>
     </section>
   );
 }

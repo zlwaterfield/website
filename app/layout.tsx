@@ -6,7 +6,7 @@ import { PHProvider } from "./providers";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zach Waterfield",
+  title: "Zach Waterfield - Engineer, Investor & Coffee Enthusiast ☕",
 };
 
 export default function RootLayout({
