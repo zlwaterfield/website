@@ -17,7 +17,7 @@
     "color": "from-purple-400 to-purple-600",
     "events": [
       {
-        "name": "Toronto Brita 10km",
+        "name": "Brita 10km",
         "year": 2023,
         "location": "Toronto"
       }
@@ -87,9 +87,9 @@
     "color": "from-orange-400 to-orange-600",
     "events": [
       {
-        "name": "IM Maines City",
+        "name": "IM Haines City",
         "year": 2024,
-        "location": "Maines City"
+        "location": "Haines City"
       },
       {
         "name": "Barrelman",
