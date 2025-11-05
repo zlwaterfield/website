@@ -94,17 +94,17 @@ const EventCard = ({ category, index }: { category: EventCategory; index: number
           {category.events.map((event, eventIndex) => (
             <div
               key={`${event.name}-${event.year}`}
-              className="bg-white/20 backdrop-blur-sm rounded-lg p-3 transition-all duration-300 hover:bg-white/30 hover:translate-x-2"
+              className="bg-white/90 backdrop-blur-sm rounded-lg p-3 transition-all duration-300 hover:bg-white hover:translate-x-2 shadow-md"
               style={{
                 animation: `slideIn 0.4s ease-out ${parseInt(animationDelay) + (eventIndex * 100)}ms both`
               }}
             >
               <div className="flex justify-between items-start">
                 <div>
-                  <p className="text-white font-semibold text-sm">{event.name}</p>
-                  <p className="text-white/80 text-xs">{event.location}</p>
+                  <p className="text-gray-900 font-semibold text-sm">{event.name}</p>
+                  <p className="text-gray-700 text-xs">{event.location}</p>
                 </div>
-                <span className="text-white/90 text-xs font-bold bg-black/20 px-2 py-1 rounded">
+                <span className="text-gray-900 text-xs font-bold bg-gray-200 px-2 py-1 rounded">
                   {event.year}
                 </span>
               </div>
