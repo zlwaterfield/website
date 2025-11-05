@@ -1,0 +1,126 @@
+[
+  {
+    "category": "5K",
+    "emoji": "🏃",
+    "color": "from-blue-400 to-blue-600",
+    "events": [
+      {
+        "name": "Ottawa Military Race",
+        "year": 2022,
+        "location": "Ottawa"
+      }
+    ]
+  },
+  {
+    "category": "10K",
+    "emoji": "🏃‍♂️",
+    "color": "from-purple-400 to-purple-600",
+    "events": [
+      {
+        "name": "Toronto Brita 10km",
+        "year": 2023,
+        "location": "Toronto"
+      }
+    ]
+  },
+  {
+    "category": "Half Marathon",
+    "emoji": "🏃💨",
+    "color": "from-pink-400 to-pink-600",
+    "events": [
+      {
+        "name": "Chili Half",
+        "year": 2024,
+        "location": "Burlington"
+      },
+      {
+        "name": "Toronto Marathon",
+        "year": 2025,
+        "location": "Toronto"
+      }
+    ]
+  },
+  {
+    "category": "Full Marathon",
+    "emoji": "🏃‍♂️💪",
+    "color": "from-red-400 to-red-600",
+    "events": [
+      {
+        "name": "TSC Toronto Waterfront Marathon",
+        "year": 2025,
+        "location": "Toronto"
+      }
+    ]
+  },
+  {
+    "category": "Sprint Triathlon",
+    "emoji": "🏊🚴🏃",
+    "color": "from-cyan-400 to-cyan-600",
+    "events": [
+      {
+        "name": "Trimuskoka",
+        "year": 2024,
+        "location": "Muskoka"
+      },
+      {
+        "name": "Subaru Series",
+        "year": 2024,
+        "location": "Guelph"
+      }
+    ]
+  },
+  {
+    "category": "Olympic Triathlon",
+    "emoji": "🏊‍♂️🚴‍♂️🏃‍♂️",
+    "color": "from-teal-400 to-teal-600",
+    "events": [
+      {
+        "name": "Toronto Tri Festival",
+        "year": 2025,
+        "location": "Toronto"
+      }
+    ]
+  },
+  {
+    "category": "Half Ironman",
+    "emoji": "⚡🏊🚴🏃",
+    "color": "from-orange-400 to-orange-600",
+    "events": [
+      {
+        "name": "IM Maines City",
+        "year": 2024,
+        "location": "Maines City"
+      },
+      {
+        "name": "Barrelman",
+        "year": 2025,
+        "location": "Niagara"
+      }
+    ]
+  },
+  {
+    "category": "Ultra Relay",
+    "emoji": "🏃‍♂️🏃‍♀️🏃💨",
+    "color": "from-indigo-400 to-indigo-600",
+    "events": [
+      {
+        "name": "Run to Montreal (650km)",
+        "year": 2025,
+        "location": "Toronto to Montreal"
+      }
+    ]
+  },
+  {
+    "category": "Ironman",
+    "emoji": "💪🏊‍♂️🚴‍♂️🏃‍♂️",
+    "color": "from-yellow-400 to-yellow-600",
+    "comingSoon": true,
+    "events": [
+      {
+        "name": "IM Ottawa",
+        "year": 2026,
+        "location": "Ottawa"
+      }
+    ]
+  }
+]
