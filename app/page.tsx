@@ -41,7 +41,7 @@ const Resume = () => {
             <li>☕️ Good coffee</li>
             <li>🗣 Talking to passionate people</li>
             <li>🛬 Traveling to new places</li>
-            <li>👟 Running</li>
+            <li>👟 Running - <Link href="/events" className="text-blue-500 hover:underline">See my endurance events</Link></li>
             <li>🚴‍♂️ Biking</li>
             <li>🏊 Swimming</li>
         </ul>
