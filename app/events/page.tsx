@@ -80,14 +80,16 @@ const EventCard = ({ category, index }: { category: EventCategory; index: number
         </div>
 
         {/* Category Title */}
-        <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-          {category.category}
-          {category.comingSoon && (
-            <span className="text-xs bg-yellow-300 text-yellow-900 px-2 py-1 rounded-full font-semibold animate-bounce">
-              Coming Soon!
-            </span>
-          )}
-        </h2>
+        <div className="bg-white/95 rounded-lg px-4 py-2 shadow-lg">
+          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+            {category.category}
+            {category.comingSoon && (
+              <span className="text-xs bg-yellow-300 text-yellow-900 px-2 py-1 rounded-full font-semibold animate-bounce">
+                Coming Soon!
+              </span>
+            )}
+          </h2>
+        </div>
 
         {/* Events List */}
         <div className="space-y-3">
