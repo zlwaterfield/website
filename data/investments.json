@@ -1,61 +1,61 @@
 [
     {
         "name": "Supabase",
-        "description": "",
+        "description": "Open source Firebase alternative with instant APIs, real-time subscriptions, and PostgreSQL database",
         "url": "https://supabase.com",
         "image_url": ""
     },
     {
         "name": "Cal.com",
-        "description": "",
+        "description": "Open source scheduling infrastructure for absolutely everyone",
         "url": "https://cal.com",
         "image_url": ""
     },
     {
         "name": "Doppler",
-        "description": "",
+        "description": "Universal secrets management platform for developers and security teams",
         "url": "https://doppler.com",
         "image_url": ""
     },
     {
         "name": "Motion",
-        "description": "",
+        "description": "AI-powered productivity assistant that automatically plans your day",
         "url": "https://www.usemotion.com",
         "image_url": ""
     },
     {
         "name": "BuildBetter",
-        "description": "",
+        "description": "AI-powered product development platform for customer insights",
         "url": "https://buildbetter.ai",
         "image_url": ""
     },
     {
         "name": "Rose Rocket",
-        "description": "",
+        "description": "Modern transportation management system for trucking companies",
         "url": "https://roserocket.com",
         "image_url": ""
     },
     {
         "name": "Taxwire",
-        "description": "",
+        "description": "Automated tax compliance and filing platform for modern businesses",
         "url": "https://taxwire.com",
         "image_url": ""
     },
     {
         "name": "Pheonix",
-        "description": "",
+        "description": "Modern digital pharmacy platform reimagining healthcare delivery",
         "url": "https://pheonix.ca",
         "image_url": ""
     },
     {
         "name": "Fern",
-        "description": "",
+        "description": "API development platform for building and maintaining SDKs across languages",
         "url": "https://buildwithfern.com",
         "image_url": ""
     },
     {
         "name": "Instant",
-        "description": "",
+        "description": "Real-time database built for modern web applications",
         "url": "https://instant.dev",
         "image_url": ""
     }
