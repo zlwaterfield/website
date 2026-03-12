@@ -91,8 +91,13 @@ const Investments = async () => {
   const investments = await getInvestments();
   return (
     <section className="w-full">
-      <h3 className="text-xl font-semibold mt-10 mb-4">Select investments</h3>
-      <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="mt-16 mb-8">
+        <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+          Select Investments
+        </h3>
+        <p className="text-gray-600 text-sm">Companies I've backed and believe in</p>
+      </div>
+      <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {investments.map((investment: any) => (
           <div key={investment.name}>
             <InvestmentCard investment={investment} />
@@ -106,11 +111,28 @@ const Investments = async () => {
 const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="block cursor-pointer">
-      <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:-translate-y-1">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-300/90 to-green-500/90 opacity-90 transition-all duration-300 group-hover:opacity-100" />
-        <div className="relative px-4 pt-4 pb-6 flex flex-col gap-2">
-          <h3 className="text-xl font-bold text-white">{investment.name}</h3>
-          <p className="text-gray-100 text-sm leading-relaxed opacity-90">{investment.description}</p>
+      <div className="group relative bg-white rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 hover:border-gray-300 overflow-hidden">
+        {/* Subtle gradient accent on hover */}
+        <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        <div className="p-6 flex flex-col gap-3">
+          {/* Company name with subtle animation */}
+          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
+            {investment.name}
+          </h3>
+
+          {/* Description with better readability */}
+          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+            {investment.description}
+          </p>
+
+          {/* Subtle arrow indicator */}
+          <div className="flex items-center gap-1 text-gray-400 group-hover:text-blue-500 transition-colors duration-200 mt-2">
+            <span className="text-xs font-medium">Learn more</span>
+            <svg className="w-3 h-3 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
         </div>
       </div>
     </Link>
