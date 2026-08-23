@@ -139,7 +139,7 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
             )}
           </div>
 
-          <p className="line-clamp-3 text-sm leading-relaxed text-slate-600">
+          <p className="line-clamp-5 text-sm leading-relaxed text-slate-600">
             {investment.description}
           </p>
 
