@@ -18,8 +18,8 @@
         "investedVia": "Via Shaan Puri's Fund",
         "description": "Secrets management for developers and security teams.",
         "url": "https://doppler.com",
-        "brandColor": "#8b5cf6",
-        "brandAccent": "#a78bfa"
+        "brandColor": "#281538",
+        "brandAccent": "#8956ed"
     },
     {
         "name": "Motion",
@@ -51,12 +51,12 @@
         "brandAccent": "#2dd4bf"
     },
     {
-        "name": "Pheonix",
+        "name": "Phoenix",
         "investedVia": "Via Shaan Puri's Fund",
         "description": "Modern digital pharmacy platform.",
-        "url": "https://pheonix.ca",
+        "url": "https://www.phoenix.ca/",
         "brandColor": "#2563eb",
-        "brandAccent": "#60a5fa"
+        "brandAccent": "#facc15"
     },
     {
         "name": "Fern",
@@ -70,24 +70,25 @@
         "name": "Instant",
         "investedVia": "Via Pioneer Fund",
         "description": "Real-time database for modern web applications. Acquired by OpenAI.",
-        "url": "https://instant.dev",
-        "brandColor": "#ff5f57",
-        "brandAccent": "#fbbf24"
+        "url": "https://www.instantdb.com/",
+        "brandColor": "#1a161b",
+        "brandAccent": "#f7f0e5",
+        "brandHighlight": "#f05a28"
     },
     {
         "name": "Replicas",
         "description": "Developer tools for building production-ready applications.",
         "url": "https://replicas.dev",
-        "brandColor": "#8b5cf6",
-        "brandAccent": "#ec4899"
+        "brandColor": "#16a34a",
+        "brandAccent": "#86efac"
     },
     {
         "name": "Depot",
         "investedVia": "Via Pioneer Fund",
         "description": "Fast, secure cloud build infrastructure.",
         "url": "https://depot.dev",
-        "brandColor": "#f97316",
-        "brandAccent": "#facc15"
+        "brandColor": "#22c55e",
+        "brandAccent": "#171717"
     },
     {
         "name": "Trigger.dev",

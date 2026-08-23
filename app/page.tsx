@@ -115,13 +115,13 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
           aria-hidden="true"
           className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
           style={{
-            background: `radial-gradient(circle at 12% 0%, ${investment.brandColor}40, transparent 45%), radial-gradient(circle at 95% 100%, ${investment.brandAccent}35, transparent 50%)`,
+            background: `radial-gradient(circle at 12% 0%, ${investment.brandColor}40, transparent 45%), radial-gradient(circle at 95% 100%, ${investment.brandAccent}35, transparent 50%)${investment.brandHighlight ? `, radial-gradient(circle at 50% 100%, ${investment.brandHighlight}35, transparent 45%)` : ''}`,
           }}
         />
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-          style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent})` }}
+          style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent}${investment.brandHighlight ? `, ${investment.brandHighlight}` : ''})` }}
         />
 
         <div className="relative flex flex-col gap-3 p-6">

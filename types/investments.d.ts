@@ -5,4 +5,5 @@ export interface Investment {
   url: string;
   brandColor: string;
   brandAccent: string;
+  brandHighlight?: string;
 }
