@@ -97,7 +97,7 @@ const Investments = async () => {
         <p className="text-gray-600 text-sm">Companies I've backed and believe in</p>
       </div>
       <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {investments.map((investment: any) => (
+        {investments.map((investment) => (
           <div key={investment.name}>
             <InvestmentCard investment={investment} />
           </div>

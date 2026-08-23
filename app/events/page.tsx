@@ -79,7 +79,7 @@ const EventCard = ({ category }: { category: EventCategory }) => {
         </div>
         <ol className="mt-5 divide-y divide-slate-100">
           {category.events.map((event) => (
-            <div
+            <li
               key={`${event.name}-${event.year}`}
               className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0"
             >
@@ -93,9 +93,8 @@ const EventCard = ({ category }: { category: EventCategory }) => {
                   {event.status === 'completed' ? 'Completed' : 'Upcoming'}
                 </span>
               </div>
-            </div>
+            </li>
           ))}
-      </div>
         </ol>
       </div>
     </section>
