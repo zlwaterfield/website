@@ -60,6 +60,15 @@
         "brandAccent": "#facc15"
     },
     {
+        "name": "Mendral",
+        "description": "AI technology company acquired by Anthropic.",
+        "url": "https://mendral.com/",
+        "brandColor": "#4f8a5b",
+        "brandAccent": "#a7d7a9",
+        "status": "acquired",
+        "acquiredBy": "Anthropic"
+    },
+    {
         "name": "Fern",
         "investedVia": "Via Pioneer Fund",
         "description": "API development platform for building and maintaining SDKs.",
