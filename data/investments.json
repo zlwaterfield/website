@@ -127,5 +127,13 @@
         "url": "https://trigger.dev",
         "brandColor": "#22c55e",
         "brandAccent": "#8b5cf6"
+    },
+    {
+        "name": "WithOne",
+        "investedVia": "Via Village Global",
+        "description": "Trust layer for AI agents, providing authentication, access control, and audit capabilities.",
+        "url": "https://www.withone.ai/",
+        "brandColor": "#626861",
+        "brandAccent": "#f8f9f5"
     }
 ]
