@@ -4,14 +4,14 @@
         "description": "Open source Postgres development platform with instant APIs and real-time subscriptions.",
         "url": "https://supabase.com",
         "brandColor": "#3ecf8e",
-        "brandAccent": "#1d8f62"
+        "brandAccent": "#249361"
     },
     {
         "name": "Cal.com",
         "description": "Open scheduling infrastructure for everyone.",
         "url": "https://cal.com",
-        "brandColor": "#111827",
-        "brandAccent": "#6b7280"
+        "brandColor": "#292929",
+        "brandAccent": "#ffffff"
     },
     {
         "name": "Doppler",
@@ -94,8 +94,8 @@
         "investedVia": "Via Pioneer Fund",
         "description": "Open-source background jobs and workflows.",
         "url": "https://trigger.dev",
-        "brandColor": "#7c3aed",
-        "brandAccent": "#ec4899"
+        "brandColor": "#41ff54",
+        "brandAccent": "#a4ff53"
     },
     {
         "name": "Float",
