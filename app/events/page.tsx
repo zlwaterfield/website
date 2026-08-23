@@ -11,28 +11,40 @@ async function getEvents(): Promise<EventCategory[]> {
 
 export default async function EventsPage() {
   const eventCategories = await getEvents();
-  const totalEvents = eventCategories.reduce((sum, cat) => sum + cat.events.length, 0);
+  const events = eventCategories.flatMap((category) => category.events);
+  const completedEvents = events.filter((event) => event.status === 'completed').length;
+  const upcomingEvents = events.filter((event) => event.status === 'upcoming').length;
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-12 md:p-24 max-w-6xl mx-auto">
-      <Hero totalEvents={totalEvents} />
+    <main className="mx-auto flex min-h-screen max-w-5xl flex-col items-center p-6 sm:p-12 md:p-20">
+      <Hero completedEvents={completedEvents} upcomingEvents={upcomingEvents} />
       <EventsGrid eventCategories={eventCategories} />
       <BackToHome />
     </main>
   );
 }
 
-const Hero = ({ totalEvents }: { totalEvents: number }) => {
+const Hero = ({ completedEvents, upcomingEvents }: { completedEvents: number; upcomingEvents: number }) => {
   return (
-    <section className="w-full mb-12 text-center">
-      <h1 className="text-5xl md:text-6xl font-bold jersey-10 mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
+    <section className="mb-14 w-full border-b border-slate-200 pb-8">
+      <Link href="/" className="text-sm font-medium text-slate-500 transition-colors hover:text-slate-900">
+        ← Home
+      </Link>
+      <h1 className="mt-6 font-bold jersey-10 text-5xl text-slate-950 md:text-6xl">
         Endurance Journey
       </h1>
-      <p className="text-xl text-gray-600 mb-2">
+      <p className="mt-3 max-w-xl text-lg text-slate-600">
         Tracking my adventures in running and triathlon
       </p>
-      <div className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full font-bold text-lg shadow-lg">
-        {totalEvents} Events Completed 🎉
+      <div className="mt-6 flex gap-8 text-sm">
+        <div>
+          <p className="text-2xl font-semibold text-slate-950">{completedEvents}</p>
+          <p className="text-slate-500">completed</p>
+        </div>
+        <div>
+          <p className="text-2xl font-semibold text-slate-950">{upcomingEvents}</p>
+          <p className="text-slate-500">on the calendar</p>
+        </div>
       </div>
     </section>
   );
@@ -41,12 +53,11 @@ const Hero = ({ totalEvents }: { totalEvents: number }) => {
 const EventsGrid = ({ eventCategories }: { eventCategories: EventCategory[] }) => {
   return (
     <section className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {eventCategories.map((category, index) => (
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        {eventCategories.map((category) => (
           <EventCard
             key={category.category}
             category={category}
-            index={index}
           />
         ))}
       </div>
@@ -54,70 +65,39 @@ const EventsGrid = ({ eventCategories }: { eventCategories: EventCategory[] }) =
   );
 }
 
-const EventCard = ({ category, index }: { category: EventCategory; index: number }) => {
-  const animationDelay = `${index * 100}ms`;
-
+const EventCard = ({ category }: { category: EventCategory }) => {
   return (
-    <div
-      className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl"
-      style={{
-        animation: `fadeInUp 0.6s ease-out ${animationDelay} both`
-      }}
-    >
-      {/* Gradient Background */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-90 transition-all duration-300 group-hover:opacity-100`} />
-
-      {/* Content */}
-      <div className="relative p-6 flex flex-col gap-4">
-        {/* Header with emoji and count */}
-        <div className="flex items-center justify-between">
-          <span className="text-4xl group-hover:scale-125 transition-transform duration-300">
-            {category.emoji}
-          </span>
-          <div className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full font-bold text-sm shadow-md">
-            {category.events.length} {category.events.length === 1 ? 'race' : 'races'}
-          </div>
-        </div>
-
-        {/* Category Title */}
-        <div className="bg-white/95 rounded-lg px-4 py-2 shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+    <section className="overflow-hidden border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
+      <div className={`h-1 bg-gradient-to-r ${category.color}`} />
+      <div className="p-6">
+        <div>
+          <h2 className="flex items-center gap-2 text-xl font-semibold text-slate-950">
+            <span aria-hidden="true">{category.emoji}</span>
             {category.category}
-            {category.comingSoon && (
-              <span className="text-xs bg-yellow-300 text-yellow-900 px-2 py-1 rounded-full font-semibold animate-bounce">
-                Coming Soon!
-              </span>
-            )}
           </h2>
+          <span className="mt-1 block text-sm text-slate-500">{category.events.length} {category.events.length === 1 ? 'event' : 'events'}</span>
         </div>
-
-        {/* Events List */}
-        <div className="space-y-3">
-          {category.events.map((event, eventIndex) => (
-            <div
+        <ol className="mt-5 divide-y divide-slate-100">
+          {category.events.map((event) => (
+            <li
               key={`${event.name}-${event.year}`}
-              className="bg-white/90 backdrop-blur-sm rounded-lg p-3 transition-all duration-300 hover:bg-white hover:translate-x-2 shadow-md"
-              style={{
-                animation: `slideIn 0.4s ease-out ${parseInt(animationDelay) + (eventIndex * 100)}ms both`
-              }}
+              className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0"
             >
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="text-gray-900 font-semibold text-sm">{event.name}</p>
-                  <p className="text-gray-700 text-xs">{event.location}</p>
-                </div>
-                <span className="text-gray-900 text-xs font-bold bg-gray-200 px-2 py-1 rounded">
-                  {event.year}
+              <div>
+                <p className="font-medium text-slate-900">{event.name}</p>
+                <p className="mt-0.5 text-sm text-slate-500">{event.location}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-sm font-medium text-slate-700">{event.year}</p>
+                <span className={event.status === 'completed' ? 'text-xs text-emerald-700' : 'text-xs text-blue-700'}>
+                  {event.status === 'completed' ? 'Completed' : 'Upcoming'}
                 </span>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
-
-      {/* Decorative corner accent */}
-      <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-5 group-hover:-translate-y-5 transition-transform duration-500" />
-    </div>
+    </section>
   );
 }
 
@@ -126,38 +106,10 @@ const BackToHome = () => {
     <div className="mt-12 text-center">
       <Link
         href="/"
-        className="inline-block text-blue-500 hover:text-blue-700 font-semibold hover:underline transition-colors"
+        className="inline-block text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
       >
         ← Back to Home
       </Link>
     </div>
   );
 }
-
-// Add custom animations via inline style
-const style = `
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-`;
-
-// Note: In a production app, these animations would typically be in globals.css
-// For this implementation, the animations are defined inline for completeness

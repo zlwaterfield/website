@@ -7,7 +7,8 @@
       {
         "name": "Ottawa Military Race",
         "year": 2022,
-        "location": "Ottawa"
+        "location": "Ottawa",
+        "status": "completed"
       }
     ]
   },
@@ -19,7 +20,8 @@
       {
         "name": "Brita 10km",
         "year": 2023,
-        "location": "Toronto"
+        "location": "Toronto",
+        "status": "completed"
       }
     ]
   },
@@ -31,12 +33,14 @@
       {
         "name": "Chili Half",
         "year": 2024,
-        "location": "Burlington"
+        "location": "Burlington",
+        "status": "completed"
       },
       {
         "name": "Toronto Marathon",
         "year": 2025,
-        "location": "Toronto"
+        "location": "Toronto",
+        "status": "completed"
       }
     ]
   },
@@ -48,7 +52,8 @@
       {
         "name": "TSC Toronto Waterfront Marathon",
         "year": 2025,
-        "location": "Toronto"
+        "location": "Toronto",
+        "status": "completed"
       }
     ]
   },
@@ -60,12 +65,20 @@
       {
         "name": "Trimuskoka",
         "year": 2024,
-        "location": "Muskoka"
+        "location": "Muskoka",
+        "status": "completed"
       },
       {
         "name": "Subaru Series",
         "year": 2024,
-        "location": "Guelph"
+        "location": "Guelph",
+        "status": "completed"
+      },
+      {
+        "name": "Trimuskoka",
+        "year": 2026,
+        "location": "Muskoka",
+        "status": "completed"
       }
     ]
   },
@@ -77,7 +90,8 @@
       {
         "name": "Toronto Tri Festival",
         "year": 2025,
-        "location": "Toronto"
+        "location": "Toronto",
+        "status": "completed"
       }
     ]
   },
@@ -89,12 +103,14 @@
       {
         "name": "IM Haines City",
         "year": 2024,
-        "location": "Haines City"
+        "location": "Haines City",
+        "status": "completed"
       },
       {
         "name": "Barrelman",
         "year": 2025,
-        "location": "Niagara"
+        "location": "Niagara",
+        "status": "completed"
       }
     ]
   },
@@ -106,7 +122,8 @@
       {
         "name": "Run to Montreal (650km)",
         "year": 2025,
-        "location": "Toronto to Montreal"
+        "location": "Toronto to Montreal",
+        "status": "completed"
       }
     ]
   },
@@ -114,12 +131,12 @@
     "category": "Ironman",
     "emoji": "💪🏊‍♂️🚴‍♂️🏃‍♂️",
     "color": "from-yellow-400 to-yellow-600",
-    "comingSoon": true,
     "events": [
       {
         "name": "IM Ottawa",
         "year": 2026,
-        "location": "Ottawa"
+        "location": "Ottawa",
+        "status": "completed"
       }
     ]
   }

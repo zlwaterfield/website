@@ -1,5 +1,11 @@
 export interface Investment {
-    name: string;
-    description: string;
-    url: string;
-  }
+  name: string;
+  investedVia?: string;
+  description: string;
+  url: string;
+  brandColor: string;
+  brandAccent: string;
+  brandHighlight?: string;
+  status?: 'acquired';
+  acquiredBy?: string;
+}

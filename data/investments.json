@@ -1,62 +1,131 @@
 [
     {
         "name": "Supabase",
-        "description": "Open source Firebase alternative with instant APIs, real-time subscriptions, and PostgreSQL database",
+        "description": "Open source Postgres development platform with instant APIs and real-time subscriptions.",
         "url": "https://supabase.com",
-        "image_url": ""
+        "brandColor": "#3ecf8e",
+        "brandAccent": "#249361"
     },
     {
         "name": "Cal.com",
-        "description": "Open source scheduling infrastructure for absolutely everyone",
+        "description": "Open scheduling infrastructure for everyone.",
         "url": "https://cal.com",
-        "image_url": ""
+        "brandColor": "#292929",
+        "brandAccent": "#ffffff"
     },
     {
         "name": "Doppler",
-        "description": "Universal secrets management platform for developers and security teams",
+        "investedVia": "Via Shaan Puri's Fund",
+        "description": "Secrets management for developers and security teams.",
         "url": "https://doppler.com",
-        "image_url": ""
+        "brandColor": "#281538",
+        "brandAccent": "#8956ed",
+        "brandHighlight": "#f36753"
     },
     {
         "name": "Motion",
-        "description": "AI-powered productivity assistant that automatically plans your day",
+        "description": "AI-powered productivity assistant that automatically plans your day.",
         "url": "https://www.usemotion.com",
-        "image_url": ""
+        "brandColor": "#3b82f6",
+        "brandAccent": "#60a5fa"
     },
     {
         "name": "BuildBetter",
-        "description": "AI-powered product development platform for customer insights",
+        "investedVia": "Via Village Global",
+        "description": "AI-powered customer-insights platform.",
         "url": "https://buildbetter.ai",
-        "image_url": ""
+        "brandColor": "#7c3aed",
+        "brandAccent": "#a78bfa"
     },
     {
         "name": "Rose Rocket",
-        "description": "Modern transportation management system for trucking companies",
+        "description": "Modern transportation management system for trucking companies.",
         "url": "https://roserocket.com",
-        "image_url": ""
+        "brandColor": "#22c55e",
+        "brandAccent": "#86efac"
     },
     {
         "name": "Taxwire",
-        "description": "Automated tax compliance and filing platform for modern businesses",
+        "description": "Automated tax compliance and filing platform for modern businesses.",
         "url": "https://taxwire.com",
-        "image_url": ""
+        "brandColor": "#0f766e",
+        "brandAccent": "#2dd4bf"
     },
     {
-        "name": "Pheonix",
-        "description": "Modern digital pharmacy platform reimagining healthcare delivery",
-        "url": "https://pheonix.ca",
-        "image_url": ""
+        "name": "Phoenix",
+        "investedVia": "Via Shaan Puri's Fund",
+        "description": "Modern digital pharmacy platform.",
+        "url": "https://www.phoenix.ca/",
+        "brandColor": "#2563eb",
+        "brandAccent": "#facc15"
+    },
+    {
+        "name": "Mendral",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Platform Engineering on Autopilot.",
+        "url": "https://mendral.com/",
+        "brandColor": "#4f8a5b",
+        "brandAccent": "#a7d7a9",
+        "status": "acquired",
+        "acquiredBy": "Anthropic"
+    },
+    {
+        "name": "Understudy Labs",
+        "description": "Technology studio building thoughtful software products.",
+        "url": "https://understudylabs.com/",
+        "brandColor": "#1a161b",
+        "brandAccent": "#9ca3af"
     },
     {
         "name": "Fern",
-        "description": "API development platform for building and maintaining SDKs across languages",
+        "investedVia": "Via Pioneer Fund",
+        "description": "API development platform for building and maintaining SDKs.",
         "url": "https://buildwithfern.com",
-        "image_url": ""
+        "brandColor": "#22c55e",
+        "brandAccent": "#171717",
+        "status": "acquired",
+        "acquiredBy": "Postman"
     },
     {
         "name": "Instant",
-        "description": "Real-time database built for modern web applications",
-        "url": "https://instant.dev",
-        "image_url": ""
+        "investedVia": "Via Pioneer Fund",
+        "description": "Real-time database for modern web applications.",
+        "url": "https://www.instantdb.com/",
+        "brandColor": "#1a161b",
+        "brandAccent": "#f7f0e5",
+        "brandHighlight": "#f05a28",
+        "status": "acquired",
+        "acquiredBy": "OpenAI"
+    },
+    {
+        "name": "Replicas",
+        "description": "Run coding agents inside cloud machines with your codebases, tooling, and dependencies. Delegate, iterate, review from anywhere.",
+        "url": "https://replicas.dev",
+        "brandColor": "#16a34a",
+        "brandAccent": "#86efac"
+    },
+    {
+        "name": "Depot",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Fast, secure cloud build infrastructure.",
+        "url": "https://depot.dev",
+        "brandColor": "#22c55e",
+        "brandAccent": "#171717"
+    },
+    {
+        "name": "PgDog",
+        "investedVia": "Via Pioneer Fund",
+        "description": "A scalable Postgres connection pooler and sharding proxy.",
+        "url": "https://pgdog.dev/",
+        "brandColor": "#2563eb",
+        "brandAccent": "#60a5fa"
+    },
+    {
+        "name": "Trigger.dev",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Open-source background jobs and workflows.",
+        "url": "https://trigger.dev",
+        "brandColor": "#22c55e",
+        "brandAccent": "#8b5cf6"
     }
 ]
