@@ -63,8 +63,9 @@
         "investedVia": "Via Pioneer Fund",
         "description": "API development platform for building and maintaining SDKs. Acquired by Postman.",
         "url": "https://buildwithfern.com",
-        "brandColor": "#2563eb",
-        "brandAccent": "#f97316"
+        "brandColor": "#22c55e",
+        "brandAccent": "#171717",
+        "status": "acquired"
     },
     {
         "name": "Instant",
@@ -73,7 +74,8 @@
         "url": "https://www.instantdb.com/",
         "brandColor": "#1a161b",
         "brandAccent": "#f7f0e5",
-        "brandHighlight": "#f05a28"
+        "brandHighlight": "#f05a28",
+        "status": "acquired"
     },
     {
         "name": "Replicas",
@@ -91,19 +93,27 @@
         "brandAccent": "#171717"
     },
     {
+        "name": "PgDog",
+        "investedVia": "Via Pioneer Fund",
+        "description": "A scalable Postgres connection pooler and sharding proxy.",
+        "url": "https://pgdog.dev/",
+        "brandColor": "#2563eb",
+        "brandAccent": "#60a5fa"
+    },
+    {
         "name": "Trigger.dev",
         "investedVia": "Via Pioneer Fund",
         "description": "Open-source background jobs and workflows.",
         "url": "https://trigger.dev",
-        "brandColor": "#41ff54",
-        "brandAccent": "#a4ff53"
+        "brandColor": "#22c55e",
+        "brandAccent": "#8b5cf6"
     },
     {
         "name": "Float",
         "investedVia": "Via a friend's SPV",
         "description": "Business finance platform for Canadian companies.",
         "url": "https://floatfinancial.com",
-        "brandColor": "#22c55e",
-        "brandAccent": "#06b6d4"
+        "brandColor": "#2563eb",
+        "brandAccent": "#60a5fa"
     }
 ]

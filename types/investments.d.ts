@@ -6,4 +6,5 @@ export interface Investment {
   brandColor: string;
   brandAccent: string;
   brandHighlight?: string;
+  status?: 'acquired';
 }

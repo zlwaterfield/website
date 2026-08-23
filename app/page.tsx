@@ -126,9 +126,16 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
 
         <div className="relative flex flex-col gap-3 p-6">
           <div>
-            <h3 className="text-lg font-semibold text-slate-950">
-            {investment.name}
-            </h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-lg font-semibold text-slate-950">
+                {investment.name}
+              </h3>
+              {investment.status === 'acquired' && (
+                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+                  Acquired
+                </span>
+              )}
+            </div>
             {investment.investedVia && (
               <p className="mt-0.5 text-xs text-slate-500">{investment.investedVia}</p>
             )}
