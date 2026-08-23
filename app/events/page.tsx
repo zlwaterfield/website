@@ -53,7 +53,7 @@ const Hero = ({ completedEvents, upcomingEvents }: { completedEvents: number; up
 const EventsGrid = ({ eventCategories }: { eventCategories: EventCategory[] }) => {
   return (
     <section className="w-full">
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         {eventCategories.map((category) => (
           <EventCard
             key={category.category}
