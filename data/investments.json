@@ -61,6 +61,7 @@
     },
     {
         "name": "Mendral",
+        "investedVia": "Via Pioneer Fund",
         "description": "AI technology company acquired by Anthropic.",
         "url": "https://mendral.com/",
         "brandColor": "#4f8a5b",
@@ -126,13 +127,5 @@
         "url": "https://trigger.dev",
         "brandColor": "#22c55e",
         "brandAccent": "#8b5cf6"
-    },
-    {
-        "name": "Float",
-        "investedVia": "Via a friend's SPV",
-        "description": "Business finance platform for Canadian companies.",
-        "url": "https://floatfinancial.com",
-        "brandColor": "#2563eb",
-        "brandAccent": "#60a5fa"
     }
 ]
