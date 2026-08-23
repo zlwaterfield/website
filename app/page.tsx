@@ -110,7 +110,7 @@ const Investments = async () => {
 const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="block cursor-pointer">
-      <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-xl">
+      <div className="group relative flex h-80 flex-col overflow-hidden border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-xl">
         {investment.status === 'acquired' && (
           <p className="relative z-10 border-b border-slate-200 bg-slate-50 px-6 py-1.5 text-xs font-medium text-slate-600">
             Acquired by {investment.acquiredBy}
@@ -129,7 +129,7 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
           style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent}${investment.brandHighlight ? `, ${investment.brandHighlight}` : ''})` }}
         />
 
-        <div className="relative flex flex-col gap-3 p-6">
+        <div className="relative flex flex-1 flex-col gap-3 p-6">
           <div>
             <h3 className="text-lg font-semibold text-slate-950">
               {investment.name}
@@ -143,7 +143,7 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
             {investment.description}
           </p>
 
-          <div className="mt-2 flex items-center gap-1 text-slate-400 transition-colors group-hover:text-slate-700">
+          <div className="mt-auto flex items-center gap-1 text-slate-400 transition-colors group-hover:text-slate-700">
             <span className="text-xs font-medium">Learn more</span>
             <svg className="w-3 h-3 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
