@@ -91,10 +91,10 @@ const Investments = async () => {
   return (
     <section className="w-full">
       <div className="mt-16 mb-8">
-        <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+        <h3 className="text-3xl font-bold mb-2 text-slate-950">
           Select Investments
         </h3>
-        <p className="text-gray-600 text-sm">Companies I've backed and believe in</p>
+        <p className="text-sm text-slate-600">Companies I've backed and believe in</p>
       </div>
       <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {investments.map((investment) => (
@@ -110,30 +110,28 @@ const Investments = async () => {
 const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="block cursor-pointer">
-      <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-xl">
+      <div className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-colors hover:border-slate-300">
         <div
           aria-hidden="true"
-          className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-          style={{
-            background: `radial-gradient(circle at 12% 0%, ${investment.brandColor}40, transparent 45%), radial-gradient(circle at 95% 100%, ${investment.brandAccent}35, transparent 50%)`,
-          }}
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          className="h-1"
           style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent})` }}
         />
 
-        <div className="relative flex flex-col gap-3 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 transition-colors duration-200">
+        <div className="flex flex-col gap-3 p-6">
+          <div>
+            <h3 className="text-lg font-semibold text-slate-950">
             {investment.name}
-          </h3>
+            </h3>
+            {investment.investedVia && (
+              <p className="mt-0.5 text-xs text-slate-500">{investment.investedVia}</p>
+            )}
+          </div>
 
-          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+          <p className="line-clamp-3 text-sm leading-relaxed text-slate-600">
             {investment.description}
           </p>
 
-          <div className="mt-2 flex items-center gap-1 text-gray-400 transition-colors duration-200 group-hover:text-gray-700">
+          <div className="mt-2 flex items-center gap-1 text-slate-400 transition-colors group-hover:text-slate-700">
             <span className="text-xs font-medium">Learn more</span>
             <svg className="w-3 h-3 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

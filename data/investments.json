@@ -15,7 +15,8 @@
     },
     {
         "name": "Doppler",
-        "description": "Secrets management for developers and security teams. Invested via Shaan Puri's Fund.",
+        "investedVia": "Via Shaan Puri's Fund",
+        "description": "Secrets management for developers and security teams.",
         "url": "https://doppler.com",
         "brandColor": "#f8d34b",
         "brandAccent": "#1f2937"
@@ -29,7 +30,8 @@
     },
     {
         "name": "BuildBetter",
-        "description": "AI-powered customer-insights platform. Invested via Village Global.",
+        "investedVia": "Via Village Global",
+        "description": "AI-powered customer-insights platform.",
         "url": "https://buildbetter.ai",
         "brandColor": "#ff6b4a",
         "brandAccent": "#fbbf24"
@@ -50,21 +52,24 @@
     },
     {
         "name": "Pheonix",
-        "description": "Modern digital pharmacy platform. Invested via Shaan Puri's Fund.",
+        "investedVia": "Via Shaan Puri's Fund",
+        "description": "Modern digital pharmacy platform.",
         "url": "https://pheonix.ca",
         "brandColor": "#2563eb",
         "brandAccent": "#60a5fa"
     },
     {
         "name": "Fern",
-        "description": "API development platform for building and maintaining SDKs. Acquired by Postman; invested via Pioneer Fund.",
+        "investedVia": "Via Pioneer Fund",
+        "description": "API development platform for building and maintaining SDKs. Acquired by Postman.",
         "url": "https://buildwithfern.com",
         "brandColor": "#2563eb",
         "brandAccent": "#f97316"
     },
     {
         "name": "Instant",
-        "description": "Real-time database for modern web applications. Acquired by OpenAI; invested via Pioneer Fund.",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Real-time database for modern web applications. Acquired by OpenAI.",
         "url": "https://instant.dev",
         "brandColor": "#ff5f57",
         "brandAccent": "#fbbf24"
@@ -78,21 +83,24 @@
     },
     {
         "name": "Depot",
-        "description": "Fast, secure cloud build infrastructure. Invested via Pioneer Fund.",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Fast, secure cloud build infrastructure.",
         "url": "https://depot.dev",
         "brandColor": "#f97316",
         "brandAccent": "#facc15"
     },
     {
         "name": "Trigger.dev",
-        "description": "Open-source background jobs and workflows. Invested via Pioneer Fund.",
+        "investedVia": "Via Pioneer Fund",
+        "description": "Open-source background jobs and workflows.",
         "url": "https://trigger.dev",
         "brandColor": "#7c3aed",
         "brandAccent": "#ec4899"
     },
     {
         "name": "Float",
-        "description": "Business finance platform for Canadian companies. Invested via a friend's SPV.",
+        "investedVia": "Via a friend's SPV",
+        "description": "Business finance platform for Canadian companies.",
         "url": "https://floatfinancial.com",
         "brandColor": "#22c55e",
         "brandAccent": "#06b6d4"
