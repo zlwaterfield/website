@@ -18,30 +18,30 @@
         "investedVia": "Via Shaan Puri's Fund",
         "description": "Secrets management for developers and security teams.",
         "url": "https://doppler.com",
-        "brandColor": "#f8d34b",
-        "brandAccent": "#1f2937"
+        "brandColor": "#8b5cf6",
+        "brandAccent": "#a78bfa"
     },
     {
         "name": "Motion",
         "description": "AI-powered productivity assistant that automatically plans your day.",
         "url": "https://www.usemotion.com",
-        "brandColor": "#6d5dfc",
-        "brandAccent": "#a78bfa"
+        "brandColor": "#3b82f6",
+        "brandAccent": "#60a5fa"
     },
     {
         "name": "BuildBetter",
         "investedVia": "Via Village Global",
         "description": "AI-powered customer-insights platform.",
         "url": "https://buildbetter.ai",
-        "brandColor": "#ff6b4a",
-        "brandAccent": "#fbbf24"
+        "brandColor": "#7c3aed",
+        "brandAccent": "#a78bfa"
     },
     {
         "name": "Rose Rocket",
         "description": "Modern transportation management system for trucking companies.",
         "url": "https://roserocket.com",
-        "brandColor": "#5a4bff",
-        "brandAccent": "#f472b6"
+        "brandColor": "#22c55e",
+        "brandAccent": "#86efac"
     },
     {
         "name": "Taxwire",
