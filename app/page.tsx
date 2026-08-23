@@ -111,6 +111,11 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="block cursor-pointer">
       <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-xl">
+        {investment.status === 'acquired' && (
+          <p className="relative z-10 border-b border-slate-200 bg-slate-50 px-6 py-1.5 text-xs font-medium text-slate-600">
+            Acquired by {investment.acquiredBy}
+          </p>
+        )}
         <div
           aria-hidden="true"
           className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -120,22 +125,15 @@ const InvestmentCard = ({ investment }: { investment: Investment }) => {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          className={`absolute inset-x-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${investment.status === 'acquired' ? 'top-7' : 'top-0'}`}
           style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent}${investment.brandHighlight ? `, ${investment.brandHighlight}` : ''})` }}
         />
 
         <div className="relative flex flex-col gap-3 p-6">
           <div>
-            <div className="flex items-center gap-2">
-              <h3 className="text-lg font-semibold text-slate-950">
-                {investment.name}
-              </h3>
-              {investment.status === 'acquired' && (
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
-                  Acquired
-                </span>
-              )}
-            </div>
+            <h3 className="text-lg font-semibold text-slate-950">
+              {investment.name}
+            </h3>
             {investment.investedVia && (
               <p className="mt-0.5 text-xs text-slate-500">{investment.investedVia}</p>
             )}

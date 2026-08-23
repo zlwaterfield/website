@@ -70,12 +70,12 @@ const EventCard = ({ category }: { category: EventCategory }) => {
     <section className="overflow-hidden rounded-xl border border-slate-200 bg-white">
       <div className={`h-1 bg-gradient-to-r ${category.color}`} />
       <div className="p-6">
-        <div className="flex items-start justify-between gap-4">
+        <div>
           <h2 className="flex items-center gap-2 text-xl font-semibold text-slate-950">
             <span aria-hidden="true">{category.emoji}</span>
             {category.category}
           </h2>
-          <span className="text-sm text-slate-500">{category.events.length} {category.events.length === 1 ? 'event' : 'events'}</span>
+          <span className="mt-1 block text-sm text-slate-500">{category.events.length} {category.events.length === 1 ? 'event' : 'events'}</span>
         </div>
         <ol className="mt-5 divide-y divide-slate-100">
           {category.events.map((event) => (
