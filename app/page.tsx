@@ -110,14 +110,21 @@ const Investments = async () => {
 const InvestmentCard = ({ investment }: { investment: Investment }) => {
   return (
     <Link href={investment.url} className="block cursor-pointer">
-      <div className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-colors hover:border-slate-300">
+      <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-xl">
         <div
           aria-hidden="true"
-          className="h-1"
+          className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          style={{
+            background: `radial-gradient(circle at 12% 0%, ${investment.brandColor}40, transparent 45%), radial-gradient(circle at 95% 100%, ${investment.brandAccent}35, transparent 50%)`,
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           style={{ background: `linear-gradient(90deg, ${investment.brandColor}, ${investment.brandAccent})` }}
         />
 
-        <div className="flex flex-col gap-3 p-6">
+        <div className="relative flex flex-col gap-3 p-6">
           <div>
             <h3 className="text-lg font-semibold text-slate-950">
             {investment.name}
