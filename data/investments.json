@@ -1,62 +1,100 @@
 [
     {
         "name": "Supabase",
-        "description": "Open source Firebase alternative with instant APIs, real-time subscriptions, and PostgreSQL database",
+        "description": "Open source Postgres development platform with instant APIs and real-time subscriptions.",
         "url": "https://supabase.com",
-        "image_url": ""
+        "brandColor": "#3ecf8e",
+        "brandAccent": "#1d8f62"
     },
     {
         "name": "Cal.com",
-        "description": "Open source scheduling infrastructure for absolutely everyone",
+        "description": "Open scheduling infrastructure for everyone.",
         "url": "https://cal.com",
-        "image_url": ""
+        "brandColor": "#111827",
+        "brandAccent": "#6b7280"
     },
     {
         "name": "Doppler",
-        "description": "Universal secrets management platform for developers and security teams",
+        "description": "Secrets management for developers and security teams. Invested via Shaan Puri's Fund.",
         "url": "https://doppler.com",
-        "image_url": ""
+        "brandColor": "#f8d34b",
+        "brandAccent": "#1f2937"
     },
     {
         "name": "Motion",
-        "description": "AI-powered productivity assistant that automatically plans your day",
+        "description": "AI-powered productivity assistant that automatically plans your day.",
         "url": "https://www.usemotion.com",
-        "image_url": ""
+        "brandColor": "#6d5dfc",
+        "brandAccent": "#a78bfa"
     },
     {
         "name": "BuildBetter",
-        "description": "AI-powered product development platform for customer insights",
+        "description": "AI-powered customer-insights platform. Invested via Village Global.",
         "url": "https://buildbetter.ai",
-        "image_url": ""
+        "brandColor": "#ff6b4a",
+        "brandAccent": "#fbbf24"
     },
     {
         "name": "Rose Rocket",
-        "description": "Modern transportation management system for trucking companies",
+        "description": "Modern transportation management system for trucking companies.",
         "url": "https://roserocket.com",
-        "image_url": ""
+        "brandColor": "#5a4bff",
+        "brandAccent": "#f472b6"
     },
     {
         "name": "Taxwire",
-        "description": "Automated tax compliance and filing platform for modern businesses",
+        "description": "Automated tax compliance and filing platform for modern businesses.",
         "url": "https://taxwire.com",
-        "image_url": ""
+        "brandColor": "#0f766e",
+        "brandAccent": "#2dd4bf"
     },
     {
         "name": "Pheonix",
-        "description": "Modern digital pharmacy platform reimagining healthcare delivery",
+        "description": "Modern digital pharmacy platform. Invested via Shaan Puri's Fund.",
         "url": "https://pheonix.ca",
-        "image_url": ""
+        "brandColor": "#2563eb",
+        "brandAccent": "#60a5fa"
     },
     {
         "name": "Fern",
-        "description": "API development platform for building and maintaining SDKs across languages",
+        "description": "API development platform for building and maintaining SDKs. Acquired by Postman; invested via Pioneer Fund.",
         "url": "https://buildwithfern.com",
-        "image_url": ""
+        "brandColor": "#2563eb",
+        "brandAccent": "#f97316"
     },
     {
         "name": "Instant",
-        "description": "Real-time database built for modern web applications",
+        "description": "Real-time database for modern web applications. Acquired by OpenAI; invested via Pioneer Fund.",
         "url": "https://instant.dev",
-        "image_url": ""
+        "brandColor": "#ff5f57",
+        "brandAccent": "#fbbf24"
+    },
+    {
+        "name": "Replicas",
+        "description": "Developer tools for building production-ready applications.",
+        "url": "https://replicas.dev",
+        "brandColor": "#8b5cf6",
+        "brandAccent": "#ec4899"
+    },
+    {
+        "name": "Depot",
+        "description": "Fast, secure cloud build infrastructure. Invested via Pioneer Fund.",
+        "url": "https://depot.dev",
+        "brandColor": "#f97316",
+        "brandAccent": "#facc15"
+    },
+    {
+        "name": "Trigger.dev",
+        "description": "Open-source background jobs and workflows. Invested via Pioneer Fund.",
+        "url": "https://trigger.dev",
+        "brandColor": "#7c3aed",
+        "brandAccent": "#ec4899"
+    },
+    {
+        "name": "Float",
+        "description": "Business finance platform for Canadian companies. Invested via a friend's SPV.",
+        "url": "https://floatfinancial.com",
+        "brandColor": "#22c55e",
+        "brandAccent": "#06b6d4"
     }
 ]
