@@ -69,6 +69,13 @@
         "acquiredBy": "Anthropic"
     },
     {
+        "name": "Understudy Labs",
+        "description": "Technology studio building thoughtful software products.",
+        "url": "https://understudylabs.com/",
+        "brandColor": "#1a161b",
+        "brandAccent": "#9ca3af"
+    },
+    {
         "name": "Fern",
         "investedVia": "Via Pioneer Fund",
         "description": "API development platform for building and maintaining SDKs.",
