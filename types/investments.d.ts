@@ -7,4 +7,5 @@ export interface Investment {
   brandAccent: string;
   brandHighlight?: string;
   status?: 'acquired';
+  acquiredBy?: string;
 }

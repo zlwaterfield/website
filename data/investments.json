@@ -19,7 +19,8 @@
         "description": "Secrets management for developers and security teams.",
         "url": "https://doppler.com",
         "brandColor": "#281538",
-        "brandAccent": "#8956ed"
+        "brandAccent": "#8956ed",
+        "brandHighlight": "#f36753"
     },
     {
         "name": "Motion",
@@ -61,21 +62,23 @@
     {
         "name": "Fern",
         "investedVia": "Via Pioneer Fund",
-        "description": "API development platform for building and maintaining SDKs. Acquired by Postman.",
+        "description": "API development platform for building and maintaining SDKs.",
         "url": "https://buildwithfern.com",
         "brandColor": "#22c55e",
         "brandAccent": "#171717",
-        "status": "acquired"
+        "status": "acquired",
+        "acquiredBy": "Postman"
     },
     {
         "name": "Instant",
         "investedVia": "Via Pioneer Fund",
-        "description": "Real-time database for modern web applications. Acquired by OpenAI.",
+        "description": "Real-time database for modern web applications.",
         "url": "https://www.instantdb.com/",
         "brandColor": "#1a161b",
         "brandAccent": "#f7f0e5",
         "brandHighlight": "#f05a28",
-        "status": "acquired"
+        "status": "acquired",
+        "acquiredBy": "OpenAI"
     },
     {
         "name": "Replicas",
