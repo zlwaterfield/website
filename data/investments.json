@@ -62,7 +62,7 @@
     {
         "name": "Mendral",
         "investedVia": "Via Pioneer Fund",
-        "description": "AI technology company acquired by Anthropic.",
+        "description": "Platform Engineering on Autopilot.",
         "url": "https://mendral.com/",
         "brandColor": "#4f8a5b",
         "brandAccent": "#a7d7a9",
@@ -99,7 +99,7 @@
     },
     {
         "name": "Replicas",
-        "description": "Developer tools for building production-ready applications.",
+        "description": "Run coding agents inside cloud machines with your codebases, tooling, and dependencies. Delegate, iterate, review from anywhere.",
         "url": "https://replicas.dev",
         "brandColor": "#16a34a",
         "brandAccent": "#86efac"
