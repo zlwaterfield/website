@@ -67,7 +67,7 @@ const EventsGrid = ({ eventCategories }: { eventCategories: EventCategory[] }) =
 
 const EventCard = ({ category }: { category: EventCategory }) => {
   return (
-    <section className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+    <section className="overflow-hidden border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
       <div className={`h-1 bg-gradient-to-r ${category.color}`} />
       <div className="p-6">
         <div>
