@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Newsreader, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { PHProvider } from "./providers";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zlwaterfield.com"),
   title: "Zach Waterfield - Engineer, Investor & Coffee Enthusiast ☕",
+  alternates: {
+    types: { "application/rss+xml": "/rss.xml" },
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +31,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" />
       </head>
       <PHProvider>
-        <body className={openSans.className}>{children}</body>
+        <body className={`${openSans.className} ${newsreader.variable}`}>{children}</body>
       </PHProvider>
     </html>
   );

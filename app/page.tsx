@@ -1,3 +1,4 @@
+import { formatDate, getPosts } from '@/lib/posts';
 import { Investment } from '@/types/investments';
 import fs from 'fs';
 import Link from 'next/link';
@@ -34,6 +35,8 @@ const Resume = () => {
       <div className="md:container mx-auto mt-3">
         <h3 className="text-xl font-semibold mt-10 mb-4">About</h3>
         <p>I grew up in Canada 🇨🇦. I went to the <a href="https://uwaterloo.ca/" className="text-blue-500 hover:underline">University of Waterloo</a> for Computer engineering and worked at a variety of early/growth-stage companies. I've lived in many places like Lima, Porto, San Francisco, Ann Arbor, Toronto, and Vancouver. I love travelling and exploring new places.</p>
+
+        <Writing />
 
         <h3 className="text-xl font-semibold mt-10 mb-4">Favourite things</h3>
         <ul className="list-disc pl-6 space-y-0.5">
@@ -83,6 +86,26 @@ const Resume = () => {
         </ul>
     </div>
     </section>
+  );
+}
+
+const Writing = () => {
+  const posts = getPosts().slice(0, 5);
+  if (posts.length === 0) return null;
+
+  return (
+    <>
+      <h3 className="text-xl font-semibold mt-10 mb-4">Writing</h3>
+      <ul className="space-y-1.5">
+        {posts.map((post) => (
+          <li key={post.slug} className="flex items-baseline justify-between gap-4">
+            <Link href={`/blog/${post.slug}`} className="text-blue-500 hover:underline">{post.title}</Link>
+            <time dateTime={post.date} className="shrink-0 text-sm tabular-nums text-slate-400">{formatDate(post.date, 'short')}</time>
+          </li>
+        ))}
+      </ul>
+      <Link href="/blog" className="mt-3 inline-block text-sm text-slate-500 hover:text-slate-900">All writing →</Link>
+    </>
   );
 }
 
