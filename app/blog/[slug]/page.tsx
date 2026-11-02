@@ -47,7 +47,7 @@ export default function PostPage({ params }: Props) {
           </h1>
           <time dateTime={post.date} className="mt-4 block text-sm text-stone-500">
             {formatDate(post.date)}
-            {post.draft && <span className="ml-2 text-xs uppercase tracking-wide text-amber-600">Draft</span>}
+            {post.draft && <span className="ml-2 text-xs uppercase tracking-wide text-stone-400">Draft</span>}
           </time>
         </header>
 

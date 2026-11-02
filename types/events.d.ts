@@ -7,7 +7,5 @@ export interface Event {
 
 export interface EventCategory {
   category: string;
-  emoji: string;
-  color: string;
   events: Event[];
 }

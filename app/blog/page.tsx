@@ -35,7 +35,7 @@ export default function BlogPage() {
               >
                 <span className="text-stone-900 group-hover:underline group-hover:decoration-stone-400 group-hover:underline-offset-4">
                   {post.title}
-                  {post.draft && <span className="ml-2 text-xs uppercase tracking-wide text-amber-600">Draft</span>}
+                  {post.draft && <span className="ml-2 text-xs uppercase tracking-wide text-stone-400">Draft</span>}
                 </span>
                 <time dateTime={post.date} className="shrink-0 text-sm tabular-nums text-stone-400">
                   {formatDate(post.date, 'short')}
