@@ -1,8 +1,6 @@
 [
   {
     "category": "5K",
-    "emoji": "🏃",
-    "color": "from-blue-400 to-blue-600",
     "events": [
       {
         "name": "Ottawa Military Race",
@@ -14,8 +12,6 @@
   },
   {
     "category": "10K",
-    "emoji": "🏃‍♂️",
-    "color": "from-purple-400 to-purple-600",
     "events": [
       {
         "name": "Brita 10km",
@@ -27,8 +23,6 @@
   },
   {
     "category": "Half Marathon",
-    "emoji": "🏃💨",
-    "color": "from-pink-400 to-pink-600",
     "events": [
       {
         "name": "Chili Half",
@@ -46,8 +40,6 @@
   },
   {
     "category": "Full Marathon",
-    "emoji": "🏃‍♂️💪",
-    "color": "from-red-400 to-red-600",
     "events": [
       {
         "name": "TSC Toronto Waterfront Marathon",
@@ -59,8 +51,6 @@
   },
   {
     "category": "Sprint Triathlon",
-    "emoji": "🏊🚴🏃",
-    "color": "from-cyan-400 to-cyan-600",
     "events": [
       {
         "name": "Trimuskoka",
@@ -84,8 +74,6 @@
   },
   {
     "category": "Olympic Triathlon",
-    "emoji": "🏊‍♂️🚴‍♂️🏃‍♂️",
-    "color": "from-teal-400 to-teal-600",
     "events": [
       {
         "name": "Toronto Tri Festival",
@@ -97,8 +85,6 @@
   },
   {
     "category": "Half Ironman",
-    "emoji": "⚡🏊🚴🏃",
-    "color": "from-orange-400 to-orange-600",
     "events": [
       {
         "name": "IM Haines City",
@@ -116,8 +102,6 @@
   },
   {
     "category": "Ultra Relay",
-    "emoji": "🏃‍♂️🏃‍♀️🏃💨",
-    "color": "from-indigo-400 to-indigo-600",
     "events": [
       {
         "name": "Run to Montreal (650km)",
@@ -129,8 +113,6 @@
   },
   {
     "category": "Ironman",
-    "emoji": "💪🏊‍♂️🚴‍♂️🏃‍♂️",
-    "color": "from-yellow-400 to-yellow-600",
     "events": [
       {
         "name": "IM Ottawa",

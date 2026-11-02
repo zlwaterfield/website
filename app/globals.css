@@ -2,32 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-.jersey-10 {
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+body {
+  color: #292524;
+  background: #fff;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Quiet, inline links: no colour, just a hairline underline. */
+.link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d6d3d1;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 150ms;
+}
+
+.link:hover {
+  text-decoration-color: #1c1917;
 }
 
 /* Blog */
