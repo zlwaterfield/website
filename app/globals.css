@@ -161,3 +161,27 @@ body {
   padding: 0.5em 0.75em 0.5em 0;
   text-align: left;
 }
+
+/* Heading anchors. Every h2/h3 in a post gets a stable id and a link to it, so
+   a reader (or an AI answer citing the post) can point at one passage. The
+   marker stays invisible until the heading is hovered or the link is focused. */
+.post-body .heading-anchor {
+  margin-left: 0.4em;
+  color: #d6d3d1;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.post-body h2:hover .heading-anchor,
+.post-body h3:hover .heading-anchor,
+.post-body .heading-anchor:focus-visible {
+  opacity: 1;
+}
+
+/* Keep an anchored heading clear of the top of the viewport. */
+.post-body h2,
+.post-body h3 {
+  scroll-margin-top: 2rem;
+}

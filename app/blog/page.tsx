@@ -1,20 +1,35 @@
-import { formatDate, getPosts } from '@/lib/posts';
-import type { Metadata } from 'next';
+import { JsonLd } from '@/app/components/JsonLd';
+import { blogSchema, breadcrumbSchema, graph } from '@/lib/schema';
+import { formatDate, getPosts, getPublishedPosts } from '@/lib/posts';
+import { pageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: 'Writing - Zach Waterfield',
-  description: 'Essays and notes on building products, startups, investing, and life.',
-};
+export const metadata = pageMetadata({
+  title: 'Writing',
+  description:
+    'Essays and notes by Zach Waterfield on building products, startups, investing, and life.',
+  path: '/blog',
+});
 
 export default function BlogPage() {
   const posts = getPosts();
 
   return (
     <main className="mx-auto min-h-screen max-w-2xl px-6 py-16 sm:py-24">
-      <Link href="/" className="text-sm text-stone-500 transition-colors hover:text-stone-900">
-        ← Zach Waterfield
-      </Link>
+      <JsonLd
+        schema={graph(
+          blogSchema(getPublishedPosts()),
+          breadcrumbSchema([
+            { name: 'Zach Waterfield', path: '/' },
+            { name: 'Writing', path: '/blog' },
+          ]),
+        )}
+      />
+      <nav aria-label="Breadcrumb">
+        <Link href="/" className="text-sm text-stone-500 transition-colors hover:text-stone-900">
+          ← Zach Waterfield
+        </Link>
+      </nav>
 
       <header className="mt-12 mb-12">
         <h1 className="font-serif-post text-4xl font-medium tracking-tight text-stone-950">Writing</h1>
