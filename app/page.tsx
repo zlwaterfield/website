@@ -1,21 +1,19 @@
+import { JsonLd } from '@/app/components/JsonLd';
+import { getInvestments } from '@/lib/data';
 import { formatDate, getPosts } from '@/lib/posts';
-import { Investment } from '@/types/investments';
-import fs from 'fs';
+import { graph, investmentsSchema, profilePageSchema } from '@/lib/schema';
+import { SOCIAL } from '@/lib/site';
 import Link from 'next/link';
-import path from 'path';
 
-async function getInvestments(): Promise<Investment[]> {
-  const data = fs.readFileSync(path.resolve('./data/investments.json'), 'utf-8');
-  const investments = JSON.parse(data) as Investment[];
-  return investments
-}
+export default async function Home() {
+  const investments = getInvestments();
 
-export default function Home() {
   return (
     <main className="mx-auto min-h-screen max-w-2xl px-6 py-16 sm:py-24">
+      <JsonLd schema={graph(profilePageSchema(), investmentsSchema(investments))} />
       <Hero />
       <Resume />
-      <Investments />
+      <Investments investments={investments} />
       <Footer />
     </main>
   );
@@ -43,7 +41,10 @@ const Resume = () => {
   return (
     <>
       <Section title="About">
-        <p className="leading-relaxed text-stone-700">I grew up in Canada. I went to the <a href="https://uwaterloo.ca/" className="link">University of Waterloo</a> for Computer engineering and worked at a variety of early/growth-stage companies. I&apos;ve lived in many places like Lima, Porto, San Francisco, Ann Arbor, Toronto, and Vancouver. I love travelling and exploring new places.</p>
+        {/* Leads with a self-contained sentence naming the person, the role, and
+            the place. It reads naturally and it is also the sentence a model
+            quotes when asked who Zach is. */}
+        <p className="leading-relaxed text-stone-700">I&apos;m a software engineer and angel investor in Toronto, Canada. I grew up in Canada and went to the <a href="https://uwaterloo.ca/" className="link">University of Waterloo</a> for Computer engineering, then worked at a variety of early/growth-stage companies. I&apos;ve lived in many places like Lima, Porto, San Francisco, Ann Arbor, Toronto, and Vancouver. I love travelling and exploring new places.</p>
       </Section>
 
       <Writing />
@@ -92,6 +93,9 @@ const Resume = () => {
           <li><span className="font-medium text-stone-950">Early startup operations</span> — I&apos;ve spent a lot of time both building my startup and helping other founders. There is a lot to manage. I&apos;m happy to help think through those early operations like organizing your team, interviewing early hires, choosing the right services for payroll, bookkeeping, etc.</li>
           <li><span className="font-medium text-stone-950">Co-founder dynamics</span> — I&apos;ve been through the ups and downs you go through with your founding team. It can be hard, but there are things you can do to make it easier. I&apos;m happy to walk through strategies I&apos;ve used that have worked wonders on team morale.</li>
         </ul>
+        <p className="mt-4 text-sm text-stone-500">
+          For paid, hands-on work, see <Link href="/consulting" className="link">consulting</Link>.
+        </p>
       </Section>
     </>
   );
@@ -131,8 +135,7 @@ const Writing = () => {
 // `npm run favicons` after adding an investment.
 const faviconFor = (url: string) => `/favicons/${new URL(url).hostname}.png`;
 
-const Investments = async () => {
-  const investments = await getInvestments();
+const Investments = ({ investments }: { investments: Awaited<ReturnType<typeof getInvestments>> }) => {
   return (
     <Section title="Select investments">
       <ul className="border-t border-stone-200">
@@ -174,12 +177,16 @@ const Investments = async () => {
 const Footer = () => {
   return (
     <footer className="mt-14 border-t border-stone-200 pt-6 text-sm text-stone-500">
-      <div className="flex flex-wrap gap-x-5 gap-y-2">
-        <a href="mailto:zlwaterfield@gmail.com" className="transition-colors hover:text-stone-900">Email</a>
-        <a href="https://www.linkedin.com/in/zlwaterfield/" className="transition-colors hover:text-stone-900">LinkedIn</a>
-        <a href="https://twitter.com/zlwaterfield" className="transition-colors hover:text-stone-900">Twitter</a>
+      {/* `rel="me"` is the other half of the Person.sameAs links in JSON-LD:
+          together they let a crawler confirm these profiles are the same person. */}
+      <address className="flex flex-wrap gap-x-5 gap-y-2 not-italic">
+        <a href={SOCIAL.email} rel="me" className="transition-colors hover:text-stone-900">Email</a>
+        <a href={SOCIAL.github} rel="me noopener" className="transition-colors hover:text-stone-900">GitHub</a>
+        <a href={SOCIAL.linkedin} rel="me noopener" className="transition-colors hover:text-stone-900">LinkedIn</a>
+        <a href={SOCIAL.twitter} rel="me noopener" className="transition-colors hover:text-stone-900">Twitter</a>
+        <Link href="/consulting" className="transition-colors hover:text-stone-900">Consulting</Link>
         <a href="/rss.xml" className="transition-colors hover:text-stone-900">RSS</a>
-      </div>
+      </address>
     </footer>
   );
 }

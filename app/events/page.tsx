@@ -1,37 +1,48 @@
+import { JsonLd } from '@/app/components/JsonLd';
+import { breadcrumbSchema, eventsSchema, graph } from '@/lib/schema';
+import { getEvents } from '@/lib/data';
 import { EventCategory } from '@/types/events';
-import type { Metadata } from 'next';
-import fs from 'fs';
+import { pageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
-import path from 'path';
 
-export const metadata: Metadata = {
-  title: 'Endurance events - Zach Waterfield',
-  description: 'Running and triathlon events, completed and upcoming.',
-};
+export const metadata = pageMetadata({
+  title: 'Endurance events',
+  description:
+    'Running and triathlon events Zach Waterfield has completed, from 5K races to a full Ironman, plus what is on the calendar next.',
+  path: '/events',
+});
 
-async function getEvents(): Promise<EventCategory[]> {
-  const data = fs.readFileSync(path.resolve('./data/events.json'), 'utf-8');
-  const events = JSON.parse(data) as EventCategory[];
-  return events;
-}
-
-export default async function EventsPage() {
-  const eventCategories = await getEvents();
+export default function EventsPage() {
+  const eventCategories = getEvents();
   const events = eventCategories.flatMap((category) => category.events);
   const completedEvents = events.filter((event) => event.status === 'completed').length;
   const upcomingEvents = events.filter((event) => event.status === 'upcoming').length;
 
   return (
     <main className="mx-auto min-h-screen max-w-2xl px-6 py-16 sm:py-24">
-      <Link href="/" className="text-sm text-stone-500 transition-colors hover:text-stone-900">
-        ← Zach Waterfield
-      </Link>
+      <JsonLd
+        schema={graph(
+          eventsSchema(eventCategories),
+          breadcrumbSchema([
+            { name: 'Zach Waterfield', path: '/' },
+            { name: 'Endurance events', path: '/events' },
+          ]),
+        )}
+      />
+      <nav aria-label="Breadcrumb">
+        <Link href="/" className="text-sm text-stone-500 transition-colors hover:text-stone-900">
+          ← Zach Waterfield
+        </Link>
+      </nav>
 
       <header className="mt-12 mb-12">
         <h1 className="font-serif-post text-4xl font-medium tracking-tight text-stone-950">Endurance events</h1>
+        {/* Spelled out rather than left as bare counts: a self-contained
+            sentence survives being extracted away from its page. */}
         <p className="mt-3 text-stone-500">
-          {completedEvents} completed
-          {upcomingEvents > 0 && `, ${upcomingEvents} on the calendar`}.
+          {completedEvents} running and triathlon events completed, across{' '}
+          {eventCategories.length} distances from 5K to full Ironman
+          {upcomingEvents > 0 && `, with ${upcomingEvents} more on the calendar`}.
         </p>
       </header>
 
@@ -40,6 +51,10 @@ export default async function EventsPage() {
           <EventGroup key={category.category} category={category} />
         ))}
       </div>
+
+      <footer className="mt-16 text-sm text-stone-500">
+        <Link href="/" className="transition-colors hover:text-stone-900">Zach Waterfield</Link>
+      </footer>
     </main>
   );
 }
